@@ -80,6 +80,7 @@ export const Navbar = () => {
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 aria-label={`Navigate to ${item.label}`}
+                className="text-inherit"
                 href={item.href}
                 size="lg"
                 onPress={handleMenuClose}
