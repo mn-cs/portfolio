@@ -12,7 +12,7 @@ export default function DocsPage() {
         </CardHeader>
         <Divider className="w-[95%] mx-auto" />
         <CardBody className="ml-5">
-          <p>Master&apos;s Degree in Data Science </p>
+          <p>Master&apos;s Degree in Data Science</p>
           <p className="text-small mr-5 text-default-500">
             April 2024 - June 2026
           </p>
