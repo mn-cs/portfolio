@@ -21,7 +21,7 @@ export default function Home() {
           >
             <CardHeader className=" ">
               <div className="">
-                <p className="">Hayk Pash</p>
+                <p className="mb-2">Hayk Pash</p>
                 <p className="text-small text-default-500">Data Scientist</p>
               </div>
             </CardHeader>
@@ -44,7 +44,7 @@ export default function Home() {
         <CardHeader className="flex gap-3">About Me</CardHeader>
 
         <Divider className="w-[98%] mx-auto" />
-        <CardBody className="pb-[10%]">
+        <CardBody className="pb-[10%] text-justify leading-relaxed">
           Hi, I&apos;m Hayk, a Data Scientist and Machine Learning Engineer
           passionate about transforming data into meaningful insights and
           solutions. With expertise in statistical analysis, machine learning,
@@ -55,13 +55,18 @@ export default function Home() {
           models, analyzing trends, and designing systems that enhance
           productivity. My projects—ranging from natural language processing to
           neural network-driven image classification—reflect my dedication to
-          innovation and solving complex challenges. Currently pursuing a
+          innovation and solving complex challenges. Staying at the forefront of
+          emergint technologies is important to me. I&apos;m currently refining
+          my skills at the University of California San Diego, pursuing my
+          Master&apos;s in Data Science.
+          {/* Currently pursuing a
           Master&apos;s in Data Science at the University of California, San
           Diego, I continue to refine my skills and stay at the forefront of
-          emerging technologies. When I&apos;m not immersed in data, you&apos;ll
-          find me exploring creative problem-solving, learning new tools, or
-          contributing to the tech community. Let&apos;s connect to share ideas,
-          collaborate, or explore new opportunities in data and technology.
+          emerging technologies. */}
+          When I&apos;m not immersed in data, you&apos;ll find me exploring
+          creative problem-solving, learning new tools, or contributing to the
+          tech community. Let&apos;s connect to share ideas, collaborate, or
+          explore new opportunities in data and technology.
         </CardBody>
       </Card>
     </section>
