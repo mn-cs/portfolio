@@ -12,7 +12,7 @@ export default function Home() {
           isBlurred
           alt="Profile Image"
           className="rounded-lg object-cover w-32 sm:w-40 md:w-48"
-          src="/pn.png"
+          src="/pp.png"
         />
         <div className=" ">
           <Card
