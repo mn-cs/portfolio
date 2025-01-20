@@ -1,7 +1,5 @@
 "use client";
-
 import { useState } from "react";
-
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -11,7 +9,6 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
-
 import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
@@ -34,15 +31,15 @@ export const Navbar = () => {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
     >
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+      <NavbarContent className="basis-1/5 sm:basis-full justify-start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <Link
             className={clsx(
               linkStyles({ color: "foreground" }),
               "data-[active=true]:text-primary data-[active=true]:font-medium"
             )}
-            onPress={handleMenuClose}
             href="/"
+            onPress={handleMenuClose}
           >
             <Logo />
             <p className="font-bold text-inherit pl-2"> Hayk </p>
@@ -57,9 +54,9 @@ export const Navbar = () => {
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium"
                 )}
+                aria-label={`Navigate to ${item.label}`}
                 color="foreground"
                 href={item.href}
-                aria-label={`Navigate to ${item.label}`}
               >
                 {item.label}
               </NextLink>
@@ -82,11 +79,10 @@ export const Navbar = () => {
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
+                aria-label={`Navigate to ${item.label}`}
                 href={item.href}
-                color="foreground"
                 size="lg"
                 onPress={handleMenuClose}
-                aria-label={`Navigate to ${item.label}`}
               >
                 {item.label}
               </Link>

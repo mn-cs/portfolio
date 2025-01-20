@@ -9,7 +9,6 @@ export const Logo: React.FC<IconSvgProps> = ({
   ...props
 }) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
     color="grey"
     fill="none"
     height={size || height}

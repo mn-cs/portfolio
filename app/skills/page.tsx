@@ -12,7 +12,6 @@ export default function DocsPage() {
         <CardBody className="ml-5">
           <p>Python, JavaScript, C++</p>
         </CardBody>
-        <CardFooter></CardFooter>
       </Card>
       <Card className="w-full mt-5">
         <CardHeader className="ml-5">Libraries / Frameworks: </CardHeader>
@@ -22,7 +21,6 @@ export default function DocsPage() {
             NumPy, SciPy, Pandas, Matplotlib, Seaborn, Scikit-learn, NLTK, Karas
           </p>
         </CardBody>
-        <CardFooter></CardFooter>
       </Card>
       <Card className="w-full mt-5">
         <CardHeader className="ml-5">Tools / Platforms: </CardHeader>
@@ -32,7 +30,6 @@ export default function DocsPage() {
             Jupyter Notebook, JupyterLab, Colab, PowerPoint, AWS
           </p>
         </CardBody>
-        <CardFooter></CardFooter>
       </Card>
       <Card className="w-full mt-5">
         <CardHeader className="ml-5">Databases:</CardHeader>
@@ -40,7 +37,6 @@ export default function DocsPage() {
         <CardBody className="ml-5">
           <p>SQL, MongoDB</p>
         </CardBody>
-        <CardFooter></CardFooter>
       </Card>
     </div>
   );

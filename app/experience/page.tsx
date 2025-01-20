@@ -132,8 +132,8 @@ export default function Experience() {
             By collaborating with the accounting team, I created a new system
             using Microsoft Excel to digitize, track, and analyze transportation
             data, which automated balance sheet calculations. This system
-            boosted the company's profit by 15.7% and improved productivity by
-            making processes faster and more accurate.
+            boosted the company&apos;s profit by 15.7% and improved productivity
+            by making processes faster and more accurate.
           </p>
         </CardBody>
       </Card>
@@ -153,7 +153,7 @@ export default function Experience() {
             Created 3D jewelry designs using Blender and Adobe Photoshop and
             worked with manufacturing teams to ensure quality production. I set
             up a system to design, produce, and sell directly to customers,
-            which doubled the company’s profits by improving efficiency and
+            which doubled the company&apos;s profits by improving efficiency and
             customer engagement.
           </p>
         </CardBody>

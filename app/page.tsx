@@ -45,23 +45,23 @@ export default function Home() {
 
         <Divider className="w-[98%] mx-auto" />
         <CardBody className="pb-[10%]">
-          Hi, I'm Hayk, a Data Scientist and Machine Learning Engineer
+          Hi, I&apos;m Hayk, a Data Scientist and Machine Learning Engineer
           passionate about transforming data into meaningful insights and
           solutions. With expertise in statistical analysis, machine learning,
           and data visualization, I have a proven track record of building
           models and systems that optimize processes and drive impactful
           decisions. My journey spans roles in data science, logistics, and
-          engineering, where I've led initiatives like creating predictive
+          engineering, where I&apos;ve led initiatives like creating predictive
           models, analyzing trends, and designing systems that enhance
           productivity. My projects—ranging from natural language processing to
           neural network-driven image classification—reflect my dedication to
           innovation and solving complex challenges. Currently pursuing a
-          Master's in Data Science at the University of California, San Diego, I
-          continue to refine my skills and stay at the forefront of emerging
-          technologies. When I'm not immersed in data, you'll find me exploring
-          creative problem-solving, learning new tools, or contributing to the
-          tech community. Let's connect to share ideas, collaborate, or explore
-          new opportunities in data and technology.
+          Master&apos;s in Data Science at the University of California, San
+          Diego, I continue to refine my skills and stay at the forefront of
+          emerging technologies. When I&apos;m not immersed in data, you&apos;ll
+          find me exploring creative problem-solving, learning new tools, or
+          contributing to the tech community. Let&apos;s connect to share ideas,
+          collaborate, or explore new opportunities in data and technology.
         </CardBody>
       </Card>
     </section>
