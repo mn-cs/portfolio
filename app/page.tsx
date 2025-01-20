@@ -11,7 +11,7 @@ export default function Home() {
         <Image
           isBlurred
           alt="Profile Image"
-          className="rounded-lg object-cover w-32 sm:w-40 md:w-48"
+          className="rounded-lg object-cover w-32 sm:w-40 md:w-48 mt-3"
           src="/pp.png"
         />
         <div className=" ">
