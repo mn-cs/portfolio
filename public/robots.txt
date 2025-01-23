@@ -1,9 +1,6 @@
-# *
+# Allow all crawlers
 User-agent: *
 Allow: /
-
-# Host
-Host: https://haykpash.com
 
 # Sitemaps
 Sitemap: https://haykpash.com/sitemap.xml
