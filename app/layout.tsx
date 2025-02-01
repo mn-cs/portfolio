@@ -92,11 +92,11 @@ export default function RootLayout({
               </div>
 
               <Divider className="w-5/6 mx-auto" />
-              <div className="flex items-center gap-1 text-current">
+              <div className="flex items-center gap-1 text-current text-xs">
                 <p className="text-default-600">
                   <span>Copyright ©</span>
                   <span> {new Date().getFullYear()} </span>
-                  <span>Haykpash.</span>
+                  <span>haykpash.</span>
                 </p>
                 <p className="text-default-600">All Rights Reserved.</p>
               </div>
