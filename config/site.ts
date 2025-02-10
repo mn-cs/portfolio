@@ -1,9 +1,13 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Hayk Pash",
+  name: "Michael Bennet",
   description: "Data Scientist.",
   navItems: [
+    {
+      label: "About",
+      href: "/",
+    },
     {
       label: "Experience",
       href: "/experience",
@@ -30,6 +34,10 @@ export const siteConfig = {
     },
   ],
   navMenuItems: [
+    {
+      label: "About",
+      href: "/",
+    },
     {
       label: "Experience",
       href: "/experience",

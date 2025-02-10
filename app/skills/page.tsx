@@ -14,7 +14,7 @@ export default function DocsPage() {
         </CardBody>
       </Card>
       <Card className="w-full mt-5">
-        <CardHeader className="ml-5">Libraries / Frameworks: </CardHeader>
+        <CardHeader className="ml-5">Libraries: </CardHeader>
         <Divider className="w-[95%] mx-auto" />
         <CardBody className="mx-5">
           <p className=" mr-5">
@@ -23,12 +23,10 @@ export default function DocsPage() {
         </CardBody>
       </Card>
       <Card className="w-full mt-5">
-        <CardHeader className="ml-5">Tools / Platforms: </CardHeader>
+        <CardHeader className="ml-5">Tools/Platforms: </CardHeader>
         <Divider className="w-[95%] mx-auto" />
         <CardBody className="ml-5">
-          <p className=" mr-5">
-            Jupyter Notebook, JupyterLab, Colab, PowerPoint, AWS
-          </p>
+          <p className=" mr-5">Jupyter Notebook, JupyterLab, Colab, AWS</p>
         </CardBody>
       </Card>
       <Card className="w-full mt-5">

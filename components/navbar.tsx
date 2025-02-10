@@ -42,7 +42,8 @@ export const Navbar = () => {
             onPress={handleMenuClose}
           >
             <Logo />
-            <p className="font-bold text-inherit pl-2"> Hayk </p>
+            <p className="font-bold text-inherit pl-2"></p>{" "}
+            {/*Saved for logo name*/}
           </Link>
         </NavbarBrand>
 

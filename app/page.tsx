@@ -21,7 +21,7 @@ export default function Home() {
           >
             <CardHeader className=" ">
               <div className="">
-                <p className="mb-2">Hayk Pash</p>
+                <p className="mb-2">Michael Hayk</p>
                 <p className="text-small text-default-500">Data Scientist</p>
               </div>
             </CardHeader>
@@ -45,7 +45,7 @@ export default function Home() {
 
         <Divider className="w-[98%] mx-auto" />
         <CardBody className="pb-[10%] text-justify leading-relaxed">
-          Hi, I&apos;m Hayk, a Data Scientist and Machine Learning Engineer
+          Hi, I&apos;m Michael, a Data Scientist and Machine Learning Engineer
           passionate about transforming data into meaningful insights and
           solutions. With expertise in statistical analysis, machine learning,
           and data visualization, I have a proven track record of building
