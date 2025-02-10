@@ -5,10 +5,12 @@ import { CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/react";
 
 export default function DocsPage() {
   return (
-    <div className="w-full mr-5 mt-7 ">
+    <div className="w-full mr-5 mt-5 ">
       <Card className="w-full  mx-auto">
         {/* Header */}
-        <CardHeader className="ml-5 text-lg">Programming Languages</CardHeader>
+        <CardHeader className="ml-5 text-lg font-semibold">
+          Programming Languages
+        </CardHeader>
         <Divider className="w-[95%] mx-auto" />
         {/* Content */}
         <CardBody className="ml-5 text-default-500 text-medium">
@@ -19,9 +21,11 @@ export default function DocsPage() {
           </ul>
         </CardBody>
       </Card>
-      <Card className="w-full mx-auto mt-5">
+      <Card className="w-full mx-auto mt-5 ">
         {/* Header */}
-        <CardHeader className="ml-5 text-lg">Libraries</CardHeader>
+        <CardHeader className="ml-5 text-lg font-semibold">
+          Libraries
+        </CardHeader>
 
         <Divider className="w-[95%] mx-auto" />
 
@@ -37,9 +41,11 @@ export default function DocsPage() {
           </ul>
         </CardBody>
       </Card>
-      <Card className="w-full mx-auto shadow-md mt-5">
+      <Card className="w-full mx-auto mt-5">
         {/* Header */}
-        <CardHeader className="ml-5 text-lg">Tools & Platforms</CardHeader>
+        <CardHeader className="ml-5 text-lg font-semibold">
+          Tools & Platforms
+        </CardHeader>
 
         <Divider className="w-[95%] mx-auto" />
 
@@ -53,9 +59,11 @@ export default function DocsPage() {
           </ul>
         </CardBody>
       </Card>
-      <Card className="w-full mx-auto shadow-md mt-5">
+      <Card className="w-full mx-auto mt-5">
         {/* Header */}
-        <CardHeader className="ml-5 text-lg ">Databases</CardHeader>
+        <CardHeader className="ml-5 text-lg font-semibold">
+          Databases
+        </CardHeader>
 
         <Divider className="w-[95%] mx-auto" />
 

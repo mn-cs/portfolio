@@ -6,7 +6,7 @@ import { CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/react";
 export default function DocsPage() {
   return (
     <div className="w-full mr-5">
-      <Card className="w-full max-w-lg mx-auto shadow-md mb-5">
+      <Card className="w-full max-w-lg mx-auto mb-5">
         {/* University Name */}
         <CardHeader className="mx-5 text-lg font-semibold">
           University of California San Diego
@@ -43,7 +43,7 @@ export default function DocsPage() {
           San Diego, California
         </CardFooter>
       </Card>
-      <Card className="w-full max-w-lg mx-auto shadow-md mb-5">
+      <Card className="w-full max-w-lg mx-auto mb-5">
         {/* College Name */}
         <CardHeader className="ml-5 text-lg font-semibold">
           Los Angeles City College
@@ -83,7 +83,7 @@ export default function DocsPage() {
           Los Angeles, California
         </CardFooter>
       </Card>
-      <Card className="w-full max-w-lg mx-auto shadow-md mb-5">
+      <Card className="w-full max-w-lg mx-auto mb-5">
         {/* University Name */}
         <CardHeader className="ml-5 text-lg font-semibold">
           University of California, Los Angeles
@@ -117,16 +117,30 @@ export default function DocsPage() {
           Los Angeles, California
         </CardFooter>
       </Card>
-      <Card className="w-full">
-        <CardHeader className="ml-5">Armenian National University </CardHeader>
+      <Card className="w-full mx-auto">
+        {/* University Name */}
+        <CardHeader className="ml-5 text-lg font-semibold">
+          Armenian National University
+        </CardHeader>
+
         <Divider className="w-[95%] mx-auto" />
-        <CardBody className="ml-5">
-          <p>Bachelor of Engineering </p>
-          <p className="text-small mr-5 text-default-500">
+
+        {/* Degree & Dates */}
+        <CardBody className="ml-5 space-y-1">
+          <p className="text-medium font-medium">
+            Bachelor of Engineering
+          </p>
+          <p className="text-small text-default-500">
             September 2003 - June 2009
           </p>
         </CardBody>
-        <CardFooter className="ml-5">Yerevan, Armenia</CardFooter>
+
+        <Divider className="w-[95%] mx-auto" />
+
+        {/* Location */}
+        <CardFooter className="ml-5 text-small text-default-500">
+          Yerevan, Armenia
+        </CardFooter>
       </Card>
     </div>
   );
