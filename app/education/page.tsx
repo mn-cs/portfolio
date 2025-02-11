@@ -5,17 +5,17 @@ import { CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/react";
 
 export default function DocsPage() {
   return (
-    <div className="w-full mr-5">
+    <div className="w-full">
       <Card className="w-full max-w-lg mx-auto mb-5">
         {/* University Name */}
-        <CardHeader className="mx-5 text-lg font-semibold">
+        <CardHeader className="px-5 text-lg font-semibold">
           University of California San Diego
         </CardHeader>
 
         <Divider className="w-[95%] mx-auto" />
 
         {/* Degree & Dates */}
-        <CardBody className="ml-5 space-y-1">
+        <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
             Master&apos;s Degree in Data Science
           </p>
@@ -25,7 +25,7 @@ export default function DocsPage() {
         <Divider className="w-[95%] mx-auto" />
 
         {/* Coursework */}
-        <CardBody className="ml-5 space-y-1">
+        <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
           <ul className="list-disc list-inside text-small text-default-500 space-y-1">
             <li>DSC 255R Machine Learning Fundamentals</li>
@@ -39,20 +39,20 @@ export default function DocsPage() {
         <Divider className="w-[95%] mx-auto" />
 
         {/* Location */}
-        <CardFooter className="ml-5 text-small text-default-700">
+        <CardFooter className="px-5 text-small text-default-700">
           San Diego, California
         </CardFooter>
       </Card>
       <Card className="w-full max-w-lg mx-auto mb-5">
         {/* College Name */}
-        <CardHeader className="ml-5 text-lg font-semibold">
+        <CardHeader className="px-5 text-lg font-semibold">
           Los Angeles City College
         </CardHeader>
 
         <Divider className="w-[95%] mx-auto" />
 
         {/* Program Name & Dates */}
-        <CardBody className="mx-5 space-y-1">
+        <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
             Computer Science and Data Science
           </p>
@@ -64,7 +64,7 @@ export default function DocsPage() {
         <Divider className="w-[95%] mx-auto" />
 
         {/* Coursework */}
-        <CardBody className="ml-5 space-y-1">
+        <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
           <ul className="list-disc list-inside text-small text-default-500 space-y-1">
             <li>CS 216 Object-Oriented Programming C++</li>
@@ -79,20 +79,20 @@ export default function DocsPage() {
         <Divider className="w-[95%] mx-auto" />
 
         {/* Location */}
-        <CardFooter className="ml-5 text-small text-default-700">
+        <CardFooter className="px-5 text-small text-default-700">
           Los Angeles, California
         </CardFooter>
       </Card>
       <Card className="w-full max-w-lg mx-auto mb-5">
         {/* University Name */}
-        <CardHeader className="ml-5 text-lg font-semibold">
+        <CardHeader className="px-5 text-lg font-semibold">
           University of California, Los Angeles
         </CardHeader>
 
         <Divider className="w-[95%] mx-auto" />
 
         {/* Program */}
-        <CardBody className="ml-5 space-y-1">
+        <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
             Computer Science Web Coding Boot Camp
           </p>
@@ -102,7 +102,7 @@ export default function DocsPage() {
         <Divider className="w-[95%] mx-auto" />
 
         {/* Coursework */}
-        <CardBody className="ml-5 space-y-1">
+        <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
           <ul className="list-disc list-inside text-small text-default-500 space-y-1">
             <li>DESMA X 481.61 Frontend Web Coding Bootcamp</li>
@@ -113,20 +113,20 @@ export default function DocsPage() {
         <Divider className="w-[95%] mx-auto" />
 
         {/* Location */}
-        <CardFooter className="ml-5 text-small text-default-700">
+        <CardFooter className="px-5 text-small text-default-700">
           Los Angeles, California
         </CardFooter>
       </Card>
       <Card className="w-full mx-auto">
         {/* University Name */}
-        <CardHeader className="ml-5 text-lg font-semibold">
+        <CardHeader className="px-5 text-lg font-semibold">
           Armenian National University
         </CardHeader>
 
         <Divider className="w-[95%] mx-auto" />
 
         {/* Degree & Dates */}
-        <CardBody className="ml-5 space-y-1">
+        <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
             Bachelor of Engineering
           </p>
@@ -138,9 +138,7 @@ export default function DocsPage() {
         <Divider className="w-[95%] mx-auto" />
 
         {/* Location */}
-        <CardFooter className="ml-5 text-small text-default-500">
-          Yerevan, Armenia
-        </CardFooter>
+        <CardFooter className="px-5 text-small">Yerevan, Armenia</CardFooter>
       </Card>
     </div>
   );

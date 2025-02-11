@@ -5,7 +5,7 @@ import { CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/react";
 
 export default function DocsPage() {
   return (
-    <div className="w-full mr-5 mt-5 ">
+    <div className="w-full mr-5">
       <Card className="w-full  mx-auto">
         {/* Header */}
         <CardHeader className="ml-5 text-lg font-semibold">
