@@ -27,7 +27,7 @@ export default function DocsPage() {
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
-          <ul className="list-disc list-inside text-small text-default-500 space-y-1">
+          <ul className="list-disc pl-3 text-small text-default-500 space-y-1">
             <li>DSC 255R Machine Learning Fundamentals</li>
             <li>DSC 207R Python for Data Science</li>
             <li>
@@ -104,7 +104,7 @@ export default function DocsPage() {
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
-          <ul className="list-disc list-inside text-small text-default-500 space-y-1">
+          <ul className="list-disc pl-3 text-small text-default-500 space-y-1">
             <li>DESMA X 481.61 Frontend Web Coding Bootcamp</li>
             <li>COM SCI X 414.20 Fundamentals of Software Development</li>
           </ul>
