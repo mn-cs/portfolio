@@ -7,44 +7,42 @@ import { CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/react";
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 mx-3 mt-2">
-      <div className="flex flex-col md:flex-row items-center  ">
-        <Image
+      <div className="flex flex-col md:flex-row items-center  w-full">
+        {/* <Image
           isBlurred
           alt="Profile Image"
           className="rounded-lg object-cover w-32 sm:w-40 md:w-48 mt-3"
           src="/pp.png"
-        />
-        <div className=" ">
+        /> */}
+        <div className=" w-full">
           <Card
             // isBlurred
-            className=" mt-3 md:ml-3 min-h-[200px] "
+            className=" mt-3 min-h-[200px]"
           >
-            <CardHeader className=" ">
-              <div className="">
+            <CardHeader className="mx-5">
+              <div className="pt-2">
                 <p className="mb-2">Michael Hayk</p>
                 <p className="text-small text-default-500">Data Scientist</p>
               </div>
             </CardHeader>
-            <Divider />
-            <CardBody>
-              <div className=""></div>
+            <Divider className="w-[95%] mx-auto" />
+            <CardBody className="mx-5">
               <p>
                 Data Scientist with expertise in data analysis, machine
                 learning, and visualization.
               </p>
             </CardBody>
-            <Divider />
-            <CardFooter>Los Angeles California USA</CardFooter>
+            <Divider className="w-[95%] mx-auto" />
+            <CardFooter className="mx-5">Los Angeles California USA</CardFooter>
           </Card>
         </div>
       </div>
       <Divider className="w-[95%] mx-auto" />
 
-      <Card className=" ">
-        <CardHeader className="flex gap-3">About Me</CardHeader>
-
-        <Divider className="w-[98%] mx-auto" />
-        <CardBody className="pb-[10%] text-justify leading-relaxed">
+      <Card>
+        <CardHeader className="px-7">About Me</CardHeader>
+        <Divider className="w-[95%] mx-auto" />
+        <CardBody className="pb-[10%] text-justify px-5">
           Hi, I&apos;m Michael, a Data Scientist and Machine Learning Engineer
           passionate about transforming data into meaningful insights and
           solutions. With expertise in statistical analysis, machine learning,

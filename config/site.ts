@@ -64,7 +64,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/haykpash",
-    linkedin: "https://www.linkedin.com/in/haykpash?trk=profile-badge",
+    github: "https://github.com/micben-cs",
+    linkedin: "https://www.linkedin.com/in/mikewm/",
   },
 };
