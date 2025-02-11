@@ -14,33 +14,33 @@ export default function Home() {
           className="rounded-lg object-cover w-32 sm:w-40 md:w-48 mt-3"
           src="/pp.png"
         /> */}
-        <div className=" w-full">
+        <div className="w-full">
           <Card
             // isBlurred
-            className=" mt-3 min-h-[200px]"
+            className="mt-3 p-2"
           >
-            <CardHeader className="mx-5">
-              <div className="pt-2">
+            <CardHeader className="">
+              <div className="">
                 <p className="mb-2">Michael Hayk</p>
                 <p className="text-small text-default-500">Data Scientist</p>
               </div>
             </CardHeader>
             <Divider className="w-[95%] mx-auto" />
-            <CardBody className="mx-5">
+            <CardBody className="">
               <p>
                 Data Scientist with expertise in data analysis, machine
                 learning, and visualization.
               </p>
             </CardBody>
             <Divider className="w-[95%] mx-auto" />
-            <CardFooter className="mx-5">Los Angeles California USA</CardFooter>
+            <CardFooter className="">Los Angeles California USA</CardFooter>
           </Card>
         </div>
       </div>
       <Divider className="w-[95%] mx-auto" />
 
       <Card>
-        <CardHeader className="px-7">About Me</CardHeader>
+        <CardHeader className="px-5">About Me</CardHeader>
         <Divider className="w-[95%] mx-auto" />
         <CardBody className="pb-[10%] text-justify px-5">
           Hi, I&apos;m Michael, a Data Scientist and Machine Learning Engineer
