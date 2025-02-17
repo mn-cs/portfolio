@@ -6,14 +6,13 @@ import { CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/react";
 export default function DocsPage() {
   return (
     <div className="w-full">
+      {/* ---------------- UCSD --------------------------*/}
       <Card className="w-full max-w-lg mx-auto mb-5">
         {/* University Name */}
         <CardHeader className="px-5 text-lg font-semibold">
           University of California San Diego
         </CardHeader>
-
         <Divider className="w-[95%] mx-auto" />
-
         {/* Degree & Dates */}
         <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
@@ -21,9 +20,7 @@ export default function DocsPage() {
           </p>
           <p className="text-small text-default-500">April 2024 - June 2026</p>
         </CardBody>
-
         <Divider className="w-[95%] mx-auto" />
-
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
@@ -35,22 +32,20 @@ export default function DocsPage() {
             </li>
           </ul>
         </CardBody>
-
         <Divider className="w-[95%] mx-auto" />
-
         {/* Location */}
         <CardFooter className="px-5 text-small text-default-700">
           San Diego, California
         </CardFooter>
       </Card>
+
+      {/* {/* ------------------ LACC -------------------*/}
       <Card className="w-full max-w-lg mx-auto mb-5">
         {/* College Name */}
         <CardHeader className="px-5 text-lg font-semibold">
           Los Angeles City College
         </CardHeader>
-
         <Divider className="w-[95%] mx-auto" />
-
         {/* Program Name & Dates */}
         <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
@@ -60,9 +55,7 @@ export default function DocsPage() {
             February 2022 - June 2024
           </p>
         </CardBody>
-
         <Divider className="w-[95%] mx-auto" />
-
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
@@ -77,7 +70,7 @@ export default function DocsPage() {
         </CardBody>
 
         <Divider className="w-[95%] mx-auto" />
-
+        {/* ------------------ UCLA -------------------*/}
         {/* Location */}
         <CardFooter className="px-5 text-small text-default-700">
           Los Angeles, California
@@ -88,9 +81,7 @@ export default function DocsPage() {
         <CardHeader className="px-5 text-lg font-semibold">
           University of California, Los Angeles
         </CardHeader>
-
         <Divider className="w-[95%] mx-auto" />
-
         {/* Program */}
         <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
@@ -98,9 +89,7 @@ export default function DocsPage() {
           </p>
           <p className="text-small text-default-500">June 2019 - March 2020</p>
         </CardBody>
-
         <Divider className="w-[95%] mx-auto" />
-
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
@@ -109,22 +98,20 @@ export default function DocsPage() {
             <li>COM SCI X 414.20 Fundamentals of Software Development</li>
           </ul>
         </CardBody>
-
         <Divider className="w-[95%] mx-auto" />
-
         {/* Location */}
         <CardFooter className="px-5 text-small text-default-700">
           Los Angeles, California
         </CardFooter>
       </Card>
-      <Card className="w-full mx-auto">
+
+      {/* ------------------ ASU -------------------*/}
+      <Card className="w-full mx-auto mb-5">
         {/* University Name */}
         <CardHeader className="px-5 text-lg font-semibold">
           Armenian National University
         </CardHeader>
-
         <Divider className="w-[95%] mx-auto" />
-
         {/* Degree & Dates */}
         <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
@@ -134,11 +121,47 @@ export default function DocsPage() {
             September 2003 - June 2009
           </p>
         </CardBody>
-
         <Divider className="w-[95%] mx-auto" />
-
         {/* Location */}
         <CardFooter className="px-5 text-small">Yerevan, Armenia</CardFooter>
+      </Card>
+
+      {/* ------------------ IBM -------------------*/}
+      <Card className="w-full max-w-lg mx-auto mb-5">
+        {/* University Name */}
+        <CardHeader className="px-5 text-lg font-semibold">Coursera</CardHeader>
+        <Divider className="w-[95%] mx-auto" />
+        {/* Program */}
+        <CardBody className="px-5 space-y-1">
+          <p className="text-medium font-medium">
+            IBM Data Science Professional Certificate
+          </p>
+          <p className="text-small text-default-500">
+            January 2024 - June 2024
+          </p>
+        </CardBody>
+        <Divider className="w-[95%] mx-auto" />
+        {/* Coursework */}
+        <CardBody className="px-5 space-y-1">
+          <p className="font-medium">Coursework</p>
+          <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
+            <li>Tools for Data Science</li>
+            <li>What is Data Science?</li>
+            <li>Data Science Methodology</li>
+            <li>Python for Data Science, AI & Development</li>
+            <li>Data Analysis with Python</li>
+            <li>Databases and SQL for Data Science with Python</li>
+            <li>Machine Learning with Python</li>
+            <li>Data Visualization with Python</li>
+            <li>Applied Data Science Capstone</li>
+            <li>Python Project for Data Science</li>
+          </ul>
+        </CardBody>
+        <Divider className="w-[95%] mx-auto" />
+        {/* Location */}
+        <CardFooter className="px-5 text-small text-default-700">
+          Los Angeles, California (Online)
+        </CardFooter>
       </Card>
     </div>
   );

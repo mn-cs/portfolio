@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://haykpash.com",
+  siteUrl: "https://michaelbennett.dev",
   generateRobotsTxt: true,
   sitemapSize: 5000,
   generateIndexSitemap: false,

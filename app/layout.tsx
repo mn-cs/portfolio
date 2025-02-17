@@ -8,6 +8,7 @@ import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import { Divider } from "@nextui-org/react";
 import { GithubIcon, LinkedInIcon } from "@/components/icons";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: {
@@ -35,6 +36,10 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="Ju9v4ymkCxJzPMLmV7iGjxqPNLUjMthdP4UGCSBFN-c"
+        />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
 
@@ -103,6 +108,7 @@ export default function RootLayout({
             </footer>
           </div>
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
