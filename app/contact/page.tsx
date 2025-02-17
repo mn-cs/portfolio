@@ -22,10 +22,12 @@ export default function PricingPage() {
           Zip Code: <span className="text-default-500"></span>
         </p>
         <p>
-          <a href="mailto:	Email Address">
+          <a
+            className=" inline-flex gap-1"
+            href="mailto:	Email Address"
+          >
             Email:
             <span className="text-default-500">
-              {" "}
               Email Address
             </span>
           </a>
