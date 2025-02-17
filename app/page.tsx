@@ -39,7 +39,7 @@ export default function Home() {
       </div>
       <Divider className="w-[95%] mx-auto" />
 
-      <Card>
+      {/* <Card>
         <CardHeader className="px-5">About Me</CardHeader>
         <Divider className="w-[95%] mx-auto" />
         <CardBody className="pb-[10%] text-justify px-5">
@@ -56,17 +56,13 @@ export default function Home() {
           innovation and solving complex challenges. Staying at the forefront of
           emergint technologies is important to me. I&apos;m currently refining
           my skills at the University of California San Diego, pursuing my
-          Master&apos;s in Data Science.
-          {/* Currently pursuing a
-          Master&apos;s in Data Science at the University of California, San
-          Diego, I continue to refine my skills and stay at the forefront of
-          emerging technologies. */}
-          When I&apos;m not immersed in data, you&apos;ll find me exploring
-          creative problem-solving, learning new tools, or contributing to the
-          tech community. Let&apos;s connect to share ideas, collaborate, or
-          explore new opportunities in data and technology.
+          Master&apos;s in Data Science. When I&apos;m not immersed in data,
+          you&apos;ll find me exploring creative problem-solving, learning new
+          tools, or contributing to the tech community. Let&apos;s connect to
+          share ideas, collaborate, or explore new opportunities in data and
+          technology.
         </CardBody>
-      </Card>
+      </Card> */}
     </section>
   );
 }
