@@ -9,27 +9,30 @@ export default function PricingPage() {
       <Divider />
       <div className="mt-4 space-y-2">
         <p>
-          <span className="text-default-500">Country: </span>
-          United States
+          Country:
+          <span className="text-default-500"> United States</span>
         </p>
         <p>
-          <span className="text-default-500">State: </span> California
+          State: <span className="text-default-500"> California</span>
         </p>
         <p>
-          <span className="text-default-500">City: </span> Los Angeles
+          City: <span className="text-default-500"> Los Angeles</span>
         </p>
         <p>
-          <span className="text-default-500">Zip Code: </span>
+          Zip Code: <span className="text-default-500"></span>
         </p>
         <p>
           <a href="mailto:	Email Address">
-            <span className="text-default-500">Email: </span>
-            Email Address
+            Email:
+            <span className="text-default-500">
+              {" "}
+              Email Address
+            </span>
           </a>
         </p>
         <p>
           <a href="tel:Phone Number">
-            <span className="text-default-500">Phone: </span> Phone Number
+            Phone: <span className="text-default-500"> Phone Number</span>
           </a>
         </p>
       </div>
