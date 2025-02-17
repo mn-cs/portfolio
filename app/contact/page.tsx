@@ -4,7 +4,7 @@ import { Divider } from "@nextui-org/react";
 
 export default function PricingPage() {
   return (
-    <Card className="w-full mr-5 mt-10 py-14 px-6">
+    <Card className="w-full mr-5 mt-5 py-14 px-6">
       <p className="text-lg font-bold text-default-600">Contact Information</p>
       <Divider />
       <div className="mt-4 space-y-2">

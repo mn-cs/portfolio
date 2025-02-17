@@ -70,6 +70,14 @@ export default function DocsPage() {
         </CardBody>
 
         <Divider className="w-[95%] mx-auto" />
+        <CardBody className="px-5 space-y-1">
+          <p className="text-medium font-medium">Academic Honors</p>
+          <ul className="list-disc list-inside text-small text-default-500">
+            <li>Dean&apos;s Honor List - 2023, 2024</li>
+          </ul>
+        </CardBody>
+
+        <Divider className="w-[95%] mx-auto" />
         {/* ------------------ UCLA -------------------*/}
         {/* Location */}
         <CardFooter className="px-5 text-small text-default-700">
