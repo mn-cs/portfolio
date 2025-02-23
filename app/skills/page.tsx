@@ -11,7 +11,7 @@ export default function DocsPage() {
         <CardHeader className="ml-5 text-lg font-semibold">
           Programming Languages
         </CardHeader>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Content */}
         <CardBody className="ml-5 text-default-500 text-medium">
           <ul className="list-disc list-inside space-y-1">
@@ -27,7 +27,7 @@ export default function DocsPage() {
           Libraries
         </CardHeader>
 
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
 
         {/* Content */}
         <CardBody className="ml-5 text-default-500 text-medium">
@@ -47,7 +47,7 @@ export default function DocsPage() {
           Tools & Platforms
         </CardHeader>
 
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
 
         {/* Content */}
         <CardBody className="ml-5 text-default-500 text-medium">
@@ -65,7 +65,7 @@ export default function DocsPage() {
           Databases
         </CardHeader>
 
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
 
         {/* Content */}
         <CardBody className="ml-5 text-default-500 text-medium">

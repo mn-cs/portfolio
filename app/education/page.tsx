@@ -12,7 +12,7 @@ export default function DocsPage() {
         <CardHeader className="px-5 text-lg font-semibold">
           University of California San Diego
         </CardHeader>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Degree & Dates */}
         <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
@@ -20,7 +20,7 @@ export default function DocsPage() {
           </p>
           <p className="text-small text-default-500">April 2024 - June 2026</p>
         </CardBody>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
@@ -32,7 +32,7 @@ export default function DocsPage() {
             </li>
           </ul>
         </CardBody>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Location */}
         <CardFooter className="px-5 text-small text-default-700">
           San Diego, California
@@ -45,7 +45,7 @@ export default function DocsPage() {
         <CardHeader className="px-5 text-lg font-semibold">
           Los Angeles City College
         </CardHeader>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Program Name & Dates */}
         <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
@@ -55,21 +55,21 @@ export default function DocsPage() {
             February 2022 - June 2024
           </p>
         </CardBody>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
           <ul className="list-disc list-inside pl-1 text-small text-default-500 space-y-1">
             <li>CS 216 Object-Oriented Programming C++</li>
-            <li>MATH 261 Calculus I</li>
-            <li>MATH 229 Statistics for Data Science</li>
             <li>CS 119 Python Programming</li>
             <li>CS 116 Programming in C++</li>
+            <li>MATH 229 Statistics for Data Science</li>
+            <li>MATH 261 Calculus I</li>
             <li>MATH 260 Precalculus</li>
           </ul>
         </CardBody>
 
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">Academic Honors</p>
           <ul className="list-disc list-inside text-small text-default-500">
@@ -77,7 +77,7 @@ export default function DocsPage() {
           </ul>
         </CardBody>
 
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* ------------------ UCLA -------------------*/}
         {/* Location */}
         <CardFooter className="px-5 text-small text-default-700">
@@ -89,7 +89,7 @@ export default function DocsPage() {
         <CardHeader className="px-5 text-lg font-semibold">
           University of California, Los Angeles
         </CardHeader>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Program */}
         <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
@@ -97,7 +97,7 @@ export default function DocsPage() {
           </p>
           <p className="text-small text-default-500">June 2019 - March 2020</p>
         </CardBody>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
@@ -106,7 +106,7 @@ export default function DocsPage() {
             <li>COM SCI X 414.20 Fundamentals of Software Development</li>
           </ul>
         </CardBody>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Location */}
         <CardFooter className="px-5 text-small text-default-700">
           Los Angeles, California
@@ -119,7 +119,7 @@ export default function DocsPage() {
         <CardHeader className="px-5 text-lg font-semibold">
           Armenian National University
         </CardHeader>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Degree & Dates */}
         <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
@@ -129,7 +129,7 @@ export default function DocsPage() {
             September 2003 - June 2009
           </p>
         </CardBody>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Location */}
         <CardFooter className="px-5 text-small">Yerevan, Armenia</CardFooter>
       </Card>
@@ -138,7 +138,7 @@ export default function DocsPage() {
       <Card className="w-full max-w-lg mx-auto mb-5">
         {/* University Name */}
         <CardHeader className="px-5 text-lg font-semibold">Coursera</CardHeader>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Program */}
         <CardBody className="px-5 space-y-1">
           <p className="text-medium font-medium">
@@ -148,7 +148,7 @@ export default function DocsPage() {
             January 2024 - June 2024
           </p>
         </CardBody>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
@@ -165,7 +165,7 @@ export default function DocsPage() {
             <li>Python Project for Data Science</li>
           </ul>
         </CardBody>
-        <Divider className="w-[95%] mx-auto" />
+        <Divider />
         {/* Location */}
         <CardFooter className="px-5 text-small text-default-700">
           Los Angeles, California (Online)

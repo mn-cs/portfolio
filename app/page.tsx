@@ -1,43 +1,57 @@
 "use client";
 
-import { Image } from "@nextui-org/image";
 import { Card } from "@nextui-org/card";
 import { CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/react";
+import qnaData from "../config/qnaData";
 
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 mx-3 mt-2">
       <div className="flex flex-col md:flex-row items-center  w-full">
-        {/* <Image
-          isBlurred
-          alt="Profile Image"
-          className="rounded-lg object-cover w-32 sm:w-40 md:w-48 mt-3"
-          src="/pp.png"
-        /> */}
         <div className="w-full">
           <Card
             // isBlurred
-            className="mt-3 p-2"
+            className="mt-3 "
           >
-            <CardHeader className="">
-              <div className="">
+            <CardHeader>
+              <div>
                 <p className="mb-2">Michael Hayk</p>
                 <p className="text-small text-default-500">Data Scientist</p>
               </div>
             </CardHeader>
-            <Divider className="w-[95%] mx-auto" />
-            <CardBody className="">
+            <Divider />
+            <CardBody>
               <p>
                 Data Scientist with expertise in data analysis, machine
                 learning, and visualization.
               </p>
             </CardBody>
-            <Divider className="w-[95%] mx-auto" />
-            <CardFooter className="">Los Angeles California USA</CardFooter>
+            <Divider />
+            <CardFooter>Los Angeles California USA</CardFooter>
           </Card>
+          <div className="flex items-center m-3 text-default-600 text-xl">
+            <span className="m-1 font-bold">Q&amp;A</span>
+            <span className="m-1 font-bold">About Me</span>
+          </div>
+          {qnaData.map((section, sectionIndex) => (
+            <Card key={sectionIndex} className="mb-3">
+              <CardHeader className="pl-5 text-lg">{section.header}</CardHeader>
+              <Divider />
+              <CardBody>
+                {section.questions.map((question, index) => (
+                  <ul key={index} className="pl-5">
+                    <li className="list-disc">Question: {question}</li>
+                    <li className="text-default-500 list-[circle] mb-3 text-sm">
+                      Answer: {section.answers[index]}
+                    </li>
+                  </ul>
+                ))}
+              </CardBody>
+            </Card>
+          ))}
         </div>
       </div>
-      <Divider className="w-[95%] mx-auto" />
+      {/* <Divider className="w-[95%] mx-auto" /> */}
 
       {/* <Card>
         <CardHeader className="px-5">About Me</CardHeader>

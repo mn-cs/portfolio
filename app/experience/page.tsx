@@ -9,16 +9,18 @@ export default function Experience() {
     <div className="">
       <Card className="mb-5">
         <CardHeader className="flex gap-3">
+          <p className="text-md ">Self-employed</p>
+        </CardHeader>
+        <Divider />
+        <CardBody>
           <div className="flex flex-col">
-            <p className="text-md ">Self-employed</p>
-            <Divider />
             <p className="text-md">
               Data Scientist and Machine Learning Engineer
             </p>
             <p className="text-small text-default-500">Jan 2023 - Present</p>
           </div>
-        </CardHeader>
-        <Divider className="w-[98%] mx-auto" />
+        </CardBody>
+        <Divider />
 
         <CardBody>
           <div className="relative col-span-6 md:col-span-4"></div>
@@ -30,7 +32,7 @@ export default function Experience() {
           </p>
         </CardBody>
 
-        <CardFooter>
+        {/* <CardFooter>
           Below are links to some of the projects I have worked on:
         </CardFooter>
         <CardFooter>
@@ -68,20 +70,23 @@ export default function Experience() {
               Predicting Financial Trends and Weather Patterns
             </Link>
           </div>
-        </CardFooter>
+        </CardFooter> */}
       </Card>
       <Card className="mb-5">
         <CardHeader className="flex gap-3">
+          <p className="text-md">In UAE LLC</p>
+        </CardHeader>
+        <Divider />
+        <CardBody>
           <div className="flex flex-col">
-            <p className="text-md ">In UAE LLC</p>
-            <Divider />
             <p className="text-md">
               Statistical Analyst, Data Visualization Specialist
             </p>
             <p className="text-small text-default-500">Mar 2019 - Jan 2023</p>
           </div>
-        </CardHeader>
-        <Divider className="w-[98%] mx-auto" />
+        </CardBody>
+
+        <Divider />
         <CardBody>
           <div className="relative col-span-6 md:col-span-4"></div>
           <p>
@@ -94,14 +99,16 @@ export default function Experience() {
       </Card>
       <Card className="mb-5">
         <CardHeader className="flex gap-3">
+          <p className="text-md">All State Trucking Transportation</p>
+        </CardHeader>
+        <Divider />
+        <CardBody>
           <div className="flex flex-col">
-            <p className="text-md">All State Trucking Transportation</p>
-            <Divider />
             <p className="text-md">Logistics and Data Analyst</p>
             <p className="text-small text-default-500">Feb 2018 - Feb 2019</p>
           </div>
-        </CardHeader>
-        <Divider className="w-[98%] mx-auto" />
+        </CardBody>
+        <Divider />
         <CardBody>
           <div className="relative col-span-6 md:col-span-4"></div>
           <p>
@@ -115,16 +122,18 @@ export default function Experience() {
       </Card>
       <Card className="mb-5">
         <CardHeader className="flex gap-3">
+          <p className="text-md">A&H Brothers</p>
+        </CardHeader>
+        <Divider />
+        <CardBody>
           <div className="flex flex-col">
-            <p className="text-md">A&H Brothers</p>
-            <Divider />
             <p className="text-md">
               Transportation Coordinator, Data System Engineer
             </p>
             <p className="text-small text-default-500">Dec 2011 - Oct 2017</p>
           </div>
-        </CardHeader>
-        <Divider className="w-[98%] mx-auto" />
+        </CardBody>
+        <Divider />
         <CardBody>
           <div className="relative col-span-6 md:col-span-4"></div>
           <p>
@@ -139,14 +148,16 @@ export default function Experience() {
       </Card>
       <Card className="">
         <CardHeader className="flex gap-3">
+          <p className="text-md">Tomazo Corp</p>
+        </CardHeader>
+        <Divider />
+        <CardBody>
           <div className="flex flex-col">
-            <p className="text-md">Tomazo Corp</p>
-            <Divider />
             <p className="text-md">Manager and 3D Jewelry Designer</p>
             <p className="text-small text-default-500">Jan 2005 - Dec 2011</p>
           </div>
-        </CardHeader>
-        <Divider className="w-[98%] mx-auto" />
+        </CardBody>
+        <Divider />
         <CardBody>
           <div className="relative col-span-6 md:col-span-4"></div>
           <p>
