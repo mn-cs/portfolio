@@ -40,9 +40,9 @@ export default function Home() {
               <CardBody>
                 {section.questions.map((question, index) => (
                   <ul key={index} className="pl-5">
-                    <li className="list-disc">Question: {question}</li>
+                    <li className="list-disc">{question}</li>
                     <li className="text-default-500 list-[circle] mb-3 text-sm">
-                      Answer: {section.answers[index]}
+                      {section.answers[index]}
                     </li>
                   </ul>
                 ))}
