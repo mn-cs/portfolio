@@ -25,6 +25,10 @@ export default function DocsPage() {
         <CardBody className="px-5 space-y-1">
           <p className="font-medium">Coursework</p>
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
+            <li>
+              DSC 208R Data Management for Analytics - SQL, NoSQL, Spark,
+              MapReduce
+            </li>
             <li>DSC 255R Machine Learning Fundamentals</li>
             <li>DSC 207R Python for Data Science</li>
             <li>
