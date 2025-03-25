@@ -9,6 +9,7 @@ import { Navbar } from "@/components/navbar";
 import { Divider } from "@nextui-org/react";
 import { GithubIcon, LinkedInIcon } from "@/components/icons";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: {
@@ -109,6 +110,7 @@ export default function RootLayout({
           </div>
         </Providers>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
