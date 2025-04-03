@@ -98,7 +98,8 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen max-w-4xl mx-auto ">
             <Navbar />
-            <main className="container mx-auto max-w-4xl pt-1  flex-grow">
+
+            <main className="container mx-auto max-w-4xl flex-grow">
               {children}
             </main>
 
@@ -120,7 +121,7 @@ export default function RootLayout({
                 </Link>
               </div>
 
-              <Divider className="w-5/6 mx-auto" />
+              <Divider className="w-[96%] mx-auto" />
               <div className="flex items-center gap-1 text-current text-xs">
                 <p className="text-default-600">
                   <span>©</span>

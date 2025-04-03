@@ -7,7 +7,7 @@ import { Link } from "@nextui-org/link";
 export default function Experience() {
   return (
     <div className="">
-      <Card className="mb-5">
+      <Card className="mb-3">
         <CardHeader className="flex gap-3">
           <p className="text-md ">Self-employed</p>
         </CardHeader>
@@ -72,7 +72,7 @@ export default function Experience() {
           </div>
         </CardFooter> */}
       </Card>
-      <Card className="mb-5">
+      <Card className="mb-3">
         <CardHeader className="flex gap-3">
           <p className="text-md">In UAE LLC</p>
         </CardHeader>
@@ -97,7 +97,7 @@ export default function Experience() {
           </p>
         </CardBody>
       </Card>
-      <Card className="mb-5">
+      <Card className="mb-3">
         <CardHeader className="flex gap-3">
           <p className="text-md">All State Trucking Transportation</p>
         </CardHeader>
@@ -120,7 +120,7 @@ export default function Experience() {
           </p>
         </CardBody>
       </Card>
-      <Card className="mb-5">
+      <Card className="mb-3">
         <CardHeader className="flex gap-3">
           <p className="text-md">A&H Brothers</p>
         </CardHeader>

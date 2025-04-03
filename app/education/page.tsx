@@ -7,7 +7,7 @@ export default function DocsPage() {
   return (
     <div className="w-full">
       {/* ---------------- UCSD --------------------------*/}
-      <Card className="w-full max-w-lg mx-auto mb-5">
+      <Card className="w-full  mx-auto mb-3">
         {/* University Name */}
         <CardHeader className="px-5 text-lg font-semibold">
           University of California San Diego
@@ -23,7 +23,10 @@ export default function DocsPage() {
         <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
-          <p className="font-medium">Coursework</p>
+          <div className="flex items-center justify-between">
+            <p className="font-medium">Coursework</p>
+            <span className="text-small italic text-default-400">GPA: 4.0</span>
+          </div>
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
             <li>
               DSC 208R Data Management for Analytics - SQL, NoSQL, Spark,
@@ -44,7 +47,7 @@ export default function DocsPage() {
       </Card>
 
       {/* {/* ------------------ LACC -------------------*/}
-      <Card className="w-full max-w-lg mx-auto mb-5">
+      <Card className="w-full  mx-auto mb-3">
         {/* College Name */}
         <CardHeader className="px-5 text-lg font-semibold">
           Los Angeles City College
@@ -62,7 +65,10 @@ export default function DocsPage() {
         <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
-          <p className="font-medium">Coursework</p>
+          <div className="flex items-center justify-between">
+            <p className="font-medium">Coursework</p>
+            <span className="text-small italic text-default-400">GPA: 4.0</span>
+          </div>
           <ul className="list-disc list-inside pl-1 text-small text-default-500 space-y-1">
             <li>CS 216 Object-Oriented Programming C++</li>
             <li>CS 119 Python Programming</li>
@@ -88,7 +94,7 @@ export default function DocsPage() {
           Los Angeles, California
         </CardFooter>
       </Card>
-      <Card className="w-full max-w-lg mx-auto mb-5">
+      <Card className="w-full  mx-auto mb-3">
         {/* University Name */}
         <CardHeader className="px-5 text-lg font-semibold">
           University of California, Los Angeles
@@ -118,7 +124,7 @@ export default function DocsPage() {
       </Card>
 
       {/* ------------------ ASU -------------------*/}
-      <Card className="w-full mx-auto mb-5">
+      <Card className="w-full mx-auto mb-3">
         {/* University Name */}
         <CardHeader className="px-5 text-lg font-semibold">
           Armenian National University
@@ -139,7 +145,7 @@ export default function DocsPage() {
       </Card>
 
       {/* ------------------ IBM -------------------*/}
-      <Card className="w-full max-w-lg mx-auto mb-5">
+      <Card className="w-full  mx-auto">
         {/* University Name */}
         <CardHeader className="px-5 text-lg font-semibold">Coursera</CardHeader>
         <Divider />
@@ -172,7 +178,7 @@ export default function DocsPage() {
         <Divider />
         {/* Location */}
         <CardFooter className="px-5 text-small text-default-700">
-          Los Angeles, California (Online)
+          Los Angeles, California
         </CardFooter>
       </Card>
     </div>

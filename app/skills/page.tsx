@@ -5,32 +5,32 @@ import { CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/react";
 
 export default function DocsPage() {
   return (
-    <div className="w-full mr-5">
-      <Card className="w-full  mx-auto">
+    <div className="w-full">
+      <Card className="w-full mx-auto mb-3">
         {/* Header */}
-        <CardHeader className="ml-5 text-lg font-semibold">
-          Programming Languages
+        <CardHeader className="px-5 text-lg font-semibold">
+          Programming & Query Languages
         </CardHeader>
         <Divider />
         {/* Content */}
-        <CardBody className="ml-5 text-default-500 text-medium">
+        <CardBody className="px-5 text-default-500 text-medium">
           <ul className="list-disc list-inside space-y-1">
             <li>Python</li>
             <li>JavaScript</li>
             <li>C++</li>
+            <li>SQL</li>
           </ul>
         </CardBody>
       </Card>
-      <Card className="w-full mx-auto mt-5 ">
+
+      <Card className="w-full mx-auto mb-3">
         {/* Header */}
-        <CardHeader className="ml-5 text-lg font-semibold">
-          Libraries
+        <CardHeader className="px-5 text-lg font-semibold">
+          Data Science Libraries
         </CardHeader>
-
         <Divider />
-
         {/* Content */}
-        <CardBody className="ml-5 text-default-500 text-medium">
+        <CardBody className="px-5 text-default-500 text-medium">
           <ul className="list-disc list-inside space-y-1">
             <li>NumPy</li>
             <li>SciPy</li>
@@ -41,37 +41,38 @@ export default function DocsPage() {
           </ul>
         </CardBody>
       </Card>
-      <Card className="w-full mx-auto mt-5">
+
+      <Card className="w-full  mx-auto mb-3">
         {/* Header */}
-        <CardHeader className="ml-5 text-lg font-semibold">
-          Tools & Platforms
+        <CardHeader className="px-5 text-lg font-semibold">
+          Databases & Data Tools
         </CardHeader>
-
         <Divider />
-
         {/* Content */}
-        <CardBody className="ml-5 text-default-500 text-medium">
+        <CardBody className="px-5 text-default-500 text-medium">
           <ul className="list-disc list-inside space-y-1">
-            <li>Jupyter Notebook</li>
-            <li>JupyterLab</li>
-            <li>Google Colab</li>
-            <li>AWS</li>
+            <li>SQLite</li>
+            <li>MongoDB</li>
           </ul>
         </CardBody>
       </Card>
-      <Card className="w-full mx-auto mt-5">
+
+      <Card className="w-full mx-auto">
         {/* Header */}
-        <CardHeader className="ml-5 text-lg font-semibold">
-          Databases
+        <CardHeader className="px-5 text-lg font-semibold">
+          Tools & Platforms
         </CardHeader>
-
         <Divider />
-
         {/* Content */}
-        <CardBody className="ml-5 text-default-500 text-medium">
+        <CardBody className="px-5 text-default-500 text-medium">
           <ul className="list-disc list-inside space-y-1">
-            <li>SQL</li>
-            <li>MongoDB</li>
+            <li>Jupyter Notebook / JupyterLab</li>
+            <li>DB Browser for SQLite</li>
+            <li>Google Colab</li>
+            <li>AWS (S3, EC2, SageMaker)</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
           </ul>
         </CardBody>
       </Card>

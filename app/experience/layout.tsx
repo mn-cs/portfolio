@@ -4,7 +4,7 @@ export default function Experience({
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex flex-col items-center justify-center mt-7 mx-3">
+    <section className="flex flex-col items-center justify-center mt-5 mx-3">
       {children}
     </section>
   );
