@@ -47,7 +47,7 @@ export const Navbar = () => {
           </Link>
         </NavbarBrand>
 
-        <ul className="hidden md:flex gap-4 justify-start ml-2">
+        <ul className="hidden md:flex gap-4 justify-start ml-2 ">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
@@ -65,7 +65,11 @@ export const Navbar = () => {
           ))}
         </ul>
       </NavbarContent>
-
+      <div className="md:ml-[14%]">
+        <span className="text-small font-time">
+          &#8734; &#8721; &#181; &#963; &#952; &#916; &#955; &#402; &#960;
+        </span>
+      </div>
       <NavbarContent className="md:hidden " justify="end">
         <ThemeSwitch />
         <NavbarMenuToggle />
