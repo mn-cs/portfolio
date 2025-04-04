@@ -34,7 +34,10 @@ export default function Home() {
             <span className="m-1 font-bold">About Me</span>
           </div>
           {qnaData.map((section, sectionIndex) => (
-            <Card key={sectionIndex} className="mb-3">
+            <Card
+              key={sectionIndex}
+              className={sectionIndex != qnaData.length - 1 ? "mb-3" : ""}
+            >
               <CardHeader className="pl-5 text-lg">{section.header}</CardHeader>
               <Divider />
               <CardBody>
