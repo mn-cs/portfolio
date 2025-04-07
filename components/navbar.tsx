@@ -16,6 +16,8 @@ import { Link } from "@nextui-org/link";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { Logo } from "@/components/icons";
+import { InlineMath } from "react-katex";
+import "katex/dist/katex.min.css";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,11 +67,13 @@ export const Navbar = () => {
           ))}
         </ul>
       </NavbarContent>
-      <div className="md:ml-[14%]">
-        <span className="text-small font-time">
-          &#8734; &#8721; &#181; &#963; &#952; &#916; &#955; &#402; &#960;
+
+      <div className="md:ml-[20%]">
+        <span className="text-small font-time text-default-500">
+          <InlineMath math={"\\LARGE \\mathit{f(x)}"} />
         </span>
       </div>
+
       <NavbarContent className="md:hidden " justify="end">
         <ThemeSwitch />
         <NavbarMenuToggle />
