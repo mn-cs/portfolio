@@ -68,11 +68,11 @@ export const Navbar = () => {
         </ul>
       </NavbarContent>
 
-      <div className="md:ml-[20%]">
+      {/* <div className="md:ml-[20%]">
         <span className="text-small font-time text-default-500">
           <InlineMath math={"\\LARGE \\mathit{f(x)}"} />
         </span>
-      </div>
+      </div> */}
 
       <NavbarContent className="md:hidden " justify="end">
         <ThemeSwitch />
