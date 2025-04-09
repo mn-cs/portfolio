@@ -1,6 +1,6 @@
 "use client";
 import { Card } from "@nextui-org/card";
-import { Divider } from "@nextui-org/react";
+import { Divider } from "@nextui-org/divider";
 
 export default function PricingPage() {
   return (

@@ -6,7 +6,7 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
-import { Divider } from "@nextui-org/react";
+import { Divider } from "@nextui-org/divider";
 import { GithubIcon, LinkedInIcon } from "@/components/icons";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";

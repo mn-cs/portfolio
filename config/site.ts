@@ -12,10 +12,10 @@ export const siteConfig = {
       label: "Experience",
       href: "/experience",
     },
-    // {
-    //   label: "Projects",
-    //   href: "/projects",
-    // },
+    {
+      label: "Projects",
+      href: "/projects",
+    },
     {
       label: "Education",
       href: "/education",
@@ -42,10 +42,10 @@ export const siteConfig = {
       label: "Experience",
       href: "/experience",
     },
-    // {
-    //   label: "Projects",
-    //   href: "/projects",
-    // },
+    {
+      label: "Projects",
+      href: "/projects",
+    },
     {
       label: "Education",
       href: "/education",

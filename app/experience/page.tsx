@@ -1,8 +1,7 @@
 "use client";
 
-import { Card } from "@nextui-org/card";
-import { CardHeader, CardBody, CardFooter, Divider } from "@nextui-org/react";
-import { Link } from "@nextui-org/link";
+import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import { Divider } from "@nextui-org/divider";
 
 export default function Experience() {
   return (

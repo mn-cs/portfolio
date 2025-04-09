@@ -204,6 +204,56 @@ export const SearchIcon = (props: IconSvgProps) => (
   </svg>
 );
 
+export const ExternalLinkIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    aria-hidden="true"
+    fill="currentColor"
+    focusable="false"
+    height="1em"
+    role="presentation"
+    viewBox="0 0 512 512"
+    width="1em"
+    {...props}
+  >
+    <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" />
+  </svg>
+);
+
+export const JupyterIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox="-3.2 -3.2 38.40 38.40"
+    fill="currentColor"
+    aria-hidden="true"
+    focusable="false"
+    role="presentation"
+    width="1em"
+    height="1em"
+    {...props}
+  >
+    <title>file_type_jupyter</title>
+    <path
+      d="M26.233,3.588A1.69,1.69,0,1,1,24.473,2a1.67,1.67,0,0,1,1.76,1.585Z"
+      style={{ fill: "#767677" }}
+    />
+    <path
+      d="M16.375,23.111c-4.487,0-8.43-1.61-10.469-3.988a11.162,11.162,0,0,0,20.938,0C24.81,21.5,20.882,23.111,16.375,23.111Z"
+      style={{ fill: "#f37726" }}
+    />
+    <path
+      d="M16.375,7.648c4.487,0,8.43,1.61,10.469,3.988a11.162,11.162,0,0,0-20.938,0C7.945,9.253,11.869,7.648,16.375,7.648Z"
+      style={{ fill: "#f37726" }}
+    />
+    <path
+      d="M10.2,27.739a2.109,2.109,0,1,1-.2-.8,2.129,2.129,0,0,1,.2.8Z"
+      style={{ fill: "#9e9e9e" }}
+    />
+    <path
+      d="M6.416,7.106A1.226,1.226,0,1,1,7.608,5.83,1.241,1.241,0,0,1,6.416,7.106Z"
+      style={{ fill: "#616262" }}
+    />
+  </svg>
+);
+
 export const NextUILogo: React.FC<IconSvgProps> = (props) => {
   const { width, height = 40 } = props;
 
