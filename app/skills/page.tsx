@@ -60,7 +60,7 @@ export default function DocsPage() {
         </CardBody>
       </Card>
 
-      <Card className="w-full mx-auto">
+      <Card className="w-full mx-auto  mb-3">
         {/* Header */}
         <CardHeader className="px-5 text-lg font-semibold">
           Tools & Platforms
@@ -76,6 +76,21 @@ export default function DocsPage() {
             <li>Git</li>
             <li>GitHub</li>
             <li>VS Code</li>
+          </ul>
+        </CardBody>
+      </Card>
+      <Card className="w-full  mx-auto">
+        {/* Header */}
+        <CardHeader className="px-5 text-lg font-semibold">
+          Spoken Languages
+        </CardHeader>
+        <Divider />
+        {/* Content */}
+        <CardBody className="px-5 text-default-500 text-medium">
+          <ul className="list-disc list-inside space-y-1">
+            <li>English (Fluent)</li>
+            <li>Armenian (Native)</li>
+            <li>Russian (Advanced)</li>
           </ul>
         </CardBody>
       </Card>
