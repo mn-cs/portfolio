@@ -35,7 +35,7 @@ export default function PricingPage() {
           <img
             src="/b_card/qr-code.svg"
             alt="QR Code"
-            className="w-[108px] pr-5"
+            className="w-[108px] pr-5 opacity-50"
           />
         </div>
         <Divider />
