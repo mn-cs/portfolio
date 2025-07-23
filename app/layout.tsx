@@ -10,6 +10,7 @@ import { Divider } from "@nextui-org/divider";
 import { GithubIcon, LinkedInIcon } from "@/components/icons";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import AskBox from "@/components/AskBox";
 
 export const metadata: Metadata = {
   title: {
@@ -102,7 +103,7 @@ export default function RootLayout({
             <main className="container mx-auto max-w-4xl flex-grow">
               {children}
             </main>
-
+            {/* <AskBox />  */}
             <footer className="w-full py-4  text-white flex flex-col items-center space-y-2">
               <div className="flex justify-end items-center space-x-4 mb-7 mt-5">
                 <Link

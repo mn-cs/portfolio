@@ -96,7 +96,7 @@ export default function Experience() {
           </p>
         </CardBody>
       </Card>
-      <Card className="mb-3">
+      {/* <Card className="mb-3">
         <CardHeader className="flex gap-3">
           <p className="text-md">All State Trucking Transportation</p>
         </CardHeader>
@@ -167,7 +167,7 @@ export default function Experience() {
             customer engagement.
           </p>
         </CardBody>
-      </Card>
+      </Card> */}
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function PricingPage() {
   return (
     <div className="flex flex-col items-center">
       <Card className="flex items-center mb-5 h-[215px] w-full">
-        <p className="w-full text-left text-default-300 p-5">Location</p>
+        <p className="w-full text-left text-default-300 p-5 ">Location</p>
         <p className="pb-1 text-xl pt-7">United States</p>
         <Divider />
         <p className="pt-1 text-default-500">Los Angeles, California</p>
@@ -35,7 +35,7 @@ export default function PricingPage() {
           <img
             src="/b_card/qr-code.svg"
             alt="QR Code"
-            className="w-[108px] pr-5 opacity-50"
+            className="w-[108px] pr-5 opacity-70"
           />
         </div>
         <Divider />

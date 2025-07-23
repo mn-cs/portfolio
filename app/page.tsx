@@ -30,7 +30,27 @@ export default function Home() {
             <Divider />
             <CardFooter>Los Angeles California USA</CardFooter>
           </Card>
-          <div className="flex items-center m-3 text-default-600 text-xl">
+          {/* ----------------------- Summary --------------------- */}
+          <Card className="mt-3 ">
+            <CardHeader> About </CardHeader>
+            <Divider />
+            <CardBody>
+              <p>
+                Motivated and detail-oriented Data Scientist with five years of
+                programming experience and a solid foundation in full-stack web
+                development. Proficient in SQL, Python, and data visualization
+                tools for extracting and clearly communicating actionable
+                insights. Currently seeking an internship or entry-level data
+                science role to join a collaborative team, learn from
+                experienced professionals, and grow through real-world projects.
+                Passionate about solving problems, optimizing processes, and
+                continuously developing both technical and interpersonal skills.
+              </p>
+            </CardBody>
+            {/* <Divider /> */}
+            {/* <CardFooter></CardFooter> */}
+          </Card>
+          {/* <div className="flex items-center m-3 text-default-600 text-xl">
             <span className="m-1 font-bold">Q&amp;A</span>
             <span className="m-1 font-bold">About Me</span>
           </div>
@@ -52,7 +72,7 @@ export default function Home() {
                 ))}
               </CardBody>
             </Card>
-          ))}
+          ))} */}
         </div>
       </div>
       {/* <Divider className="w-[95%] mx-auto" /> */}
