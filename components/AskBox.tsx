@@ -83,7 +83,12 @@ export default function ChatButton() {
     <>
       {/* Floating Avatar */}
       <div
+        role="button"
+        tabIndex={0}
         onClick={toggleChat}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") toggleChat();
+        }}
         style={{
           position: "fixed",
           bottom: "20px",
