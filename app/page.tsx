@@ -36,7 +36,11 @@ export default function Home() {
             <Divider />
             <CardBody>
               <p>
-                Motivated and detail-oriented Data Scientist with five years of
+                Motivated Data Scientist with a strong foundation in programming
+                and statistics. Seeking an internship or entry-level role to
+                apply academic training, contribute to team projects, and gain
+                real-world experience.
+                {/* Motivated and detail-oriented Data Scientist with five years of
                 programming experience and a solid foundation in full-stack web
                 development. Proficient in SQL, Python, and data visualization
                 tools for extracting and clearly communicating actionable
@@ -44,7 +48,7 @@ export default function Home() {
                 science role to join a collaborative team, learn from
                 experienced professionals, and grow through real-world projects.
                 Passionate about solving problems, optimizing processes, and
-                continuously developing both technical and interpersonal skills.
+                continuously developing both technical and interpersonal skills. */}
               </p>
             </CardBody>
             {/* <Divider /> */}

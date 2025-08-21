@@ -8,7 +8,7 @@ export default function Experience() {
     <div className="">
       <Card className="mb-3">
         <CardHeader className="flex gap-3">
-          <p className="text-md ">Self-employed</p>
+          <p className="text-md ">Graduate Program at UC San Diego </p>
         </CardHeader>
         <Divider />
         <CardBody>
@@ -21,7 +21,7 @@ export default function Experience() {
         </CardBody>
         <Divider />
 
-        <CardBody>
+        {/* <CardBody>
           <div className="relative col-span-6 md:col-span-4"></div>
           <p>
             Collecting and preparing accurate data, conducting analyses, and
@@ -29,6 +29,79 @@ export default function Experience() {
             problems. Creating visualizations to communicate insights, enabling
             data-driven decisions and process improvements.
           </p>
+        </CardBody> */}
+
+        <CardBody>
+          <ul className="list-disc list-outside pl-6 space-y-2">
+            <li>
+              Data collection:{" "}
+              <span className="text-small text-default-500">
+                Gathered data from verified sources, downloaded CSV, JSON, and
+                other formats, loaded them into Jupyter Notebook, and saved the
+                raw copy in Pandas DataFrames.
+              </span>
+            </li>
+            <li>
+              Data cleaning (Data Wrangling):{" "}
+              <span className="text-small text-default-500">
+                Standardized formats, corrected types, handled missing values
+                and outliers, and fixed inconsistencies.
+              </span>
+            </li>
+            <li>
+              Exploratory data analysis (EDA):{" "}
+              <span className="text-small text-default-500">
+                Summarized distributions and explored relationships to find
+                patterns and trends, computing descriptive statistics with
+                NumPy.
+              </span>
+            </li>
+            <li>
+              Hypothesis testing:{" "}
+              <span className="text-small text-default-500">
+                Applied statistical methods to test hypotheses and draw
+                conclusions with SciPy and statsmodels.
+              </span>
+            </li>
+            <li>
+              Data visualization and communication:{" "}
+              <span className="text-small text-default-500">
+                Presented findings clearly with charts and explanations using
+                Matplotlib and Seaborn.
+              </span>
+            </li>
+            <li>
+              Statistical Modeling and Machine Learning:{" "}
+              <span className="text-small text-default-500">
+                Built feature-engineered pipelines with scikit-learn, then
+                trained and tuned models with cross-validation for predictive
+                modeling.
+              </span>
+            </li>
+            <li>
+              Model Optimization and Simulation:{" "}
+              <span className="text-small text-default-500">
+                Tuned hyperparameters to improve model accuracy, applied machine
+                learning algorithms with optimization techniques to test
+                alternative scenarios, and simulated outcomes for decision
+                support.
+              </span>
+            </li>
+            <li>
+              Reproducibility and Transparency:{" "}
+              <span className="text-small text-default-500">
+                Ensured analyses could be replicated by others through clear
+                documentation of methods, data processing, and results.
+              </span>
+            </li>
+            <li>
+              Data Privacy and Ethical Considerations:{" "}
+              <span className="text-small text-default-500">
+                Protected sensitive information through de-identification and
+                ethical practices, following data governance standards.
+              </span>
+            </li>
+          </ul>
         </CardBody>
 
         {/* <CardFooter>
@@ -73,14 +146,12 @@ export default function Experience() {
       </Card>
       <Card className="mb-3">
         <CardHeader className="flex gap-3">
-          <p className="text-md">In UAE LLC</p>
+          <p className="text-md">In UAE LLc (Remote) </p>
         </CardHeader>
         <Divider />
         <CardBody>
           <div className="flex flex-col">
-            <p className="text-md">
-              Statistical Analyst, Data Visualization Specialist
-            </p>
+            <p className="text-md">Web Analyst / Developer</p>
             <p className="text-small text-default-500">Mar 2019 - Jan 2023</p>
           </div>
         </CardBody>
@@ -88,12 +159,23 @@ export default function Experience() {
         <Divider />
         <CardBody>
           <div className="relative col-span-6 md:col-span-4"></div>
-          <p>
+          {/* <p>
             Analyzed website user engagement data to identify trends and improve
             web performance, enhancing user experience and increasing new user
             profiles by 8.5%. Created visual reports to communicate insights and
             support data-driven decisions effectively.
-          </p>
+          </p> */}
+
+          <ul className="list-disc list-outside pl-6 space-y-2">
+            <li>
+              Data-Driven Applications:{" "}
+              <span className="text-small text-default-500">
+                Designed and maintained web applications by integrating REST
+                APIs for automation, managing code with version control,
+                debugging, and deploying to cloud environments.
+              </span>
+            </li>
+          </ul>
         </CardBody>
       </Card>
       {/* <Card className="mb-3">
