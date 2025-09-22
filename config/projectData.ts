@@ -1,5 +1,10 @@
 const projects = [
   {
+    title: "Billionaires Data Analysis",
+    image: "plots/successfactors.png",
+    link: "https://github.com/micben-cs/successfactors/tree/main",
+  },
+  {
     title: "Decision Tree Classification Analysis",
     image: "plots/d_tree0.png",
     link: "https://github.com/micben-cs/projectWeb/blob/main/decision_trees/decision_tree.ipynb",

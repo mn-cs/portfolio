@@ -36,10 +36,10 @@ export default function Home() {
             <Divider />
             <CardBody>
               <p>
-                Motivated Data Scientist with a strong foundation in programming
-                and statistics. Seeking an internship or entry-level role to
-                apply academic training, contribute to team projects, and gain
-                real-world experience.
+                Data Scientist with hands-on experience in SQL, Python, and
+                machine learning. Skilled in building data pipelines, performing
+                statistical analysis, and developing predictive models for
+                business insights.
                 {/* Motivated and detail-oriented Data Scientist with five years of
                 programming experience and a solid foundation in full-stack web
                 development. Proficient in SQL, Python, and data visualization
