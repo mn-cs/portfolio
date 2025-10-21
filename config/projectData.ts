@@ -1,5 +1,10 @@
 const projects = [
   {
+    title: "Feature Representation Analysis",
+    image: "plots/cifar.png",
+    link: "https://github.com/micben-cs/image-representation",
+  },
+  {
     title: "Billionaires Data Analysis",
     image: "plots/successfactors.png",
     link: "https://github.com/micben-cs/successfactors/tree/main",
