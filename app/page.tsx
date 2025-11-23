@@ -17,7 +17,9 @@ export default function Home() {
             <CardHeader>
               <div>
                 <p className="mb-2">Michael Hayk</p>
-                <p className="text-small text-default-500">Data Scientist</p>
+                <p className="text-small text-default-500">
+                  Data Scientist | Machine Learning Engineer
+                </p>
               </div>
             </CardHeader>
             <Divider />
