@@ -19,14 +19,17 @@ export default function DocsPage() {
           <p className="text-medium font-medium">
             Master&apos;s Degree in Data Science
           </p>
-          <p className="text-small text-default-500">April 2024 - June 2026</p>
+          <p className="text-small text-default-500">
+            September 2024 - June 2027
+          </p>
         </CardBody>
         <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <div className="flex items-center justify-between">
             <p className="font-medium">Coursework</p>
-            <span className="text-small italic text-default-400">GPA: 4.0</span>
+            <span className="text-small italic text-default-400">...</span>
+            {/* <span className="text-small italic text-default-400">GPA: 4.0</span> */}
           </div>
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
             <li>DSC 257R: Unsupervised Learning</li>
@@ -64,7 +67,8 @@ export default function DocsPage() {
         <CardBody className="px-5 space-y-1">
           <div className="flex items-center justify-between">
             <p className="font-medium">Coursework</p>
-            <span className="text-small italic text-default-400">GPA: 4.0</span>
+            {/* <span className="text-small italic text-default-400">GPA: 4.0</span> */}
+            <span className="text-small italic text-default-400">...</span>
           </div>
           <ul className="list-disc list-inside pl-1 text-small text-default-500 space-y-1">
             <li>CS 216 Object-Oriented Programming C++</li>
