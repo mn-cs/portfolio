@@ -77,7 +77,7 @@ export default function DocsPage() {
           <ul className="list-disc list-inside space-y-1">
             <li>English (Fluent)</li>
             <li>Armenian (Native)</li>
-            <li>Russian (Advanced)</li>
+            {/* <li>Russian (Advanced)</li> */}
           </ul>
         </CardBody>
       </Card>
