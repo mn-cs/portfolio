@@ -28,8 +28,8 @@ export default function DocsPage() {
         <CardBody className="px-5 space-y-1">
           <div className="flex items-center justify-between">
             <p className="font-medium">Coursework</p>
-            <span className="text-small italic text-default-400">...</span>
-            {/* <span className="text-small italic text-default-400">GPA: 4.0</span> */}
+            {/* <span className="text-small italic text-default-400">...</span> */}
+            <span className="text-small italic text-default-400">GPA: 4.0</span>
           </div>
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
             <li>DSC 257R: Unsupervised Learning</li>
@@ -67,8 +67,8 @@ export default function DocsPage() {
         <CardBody className="px-5 space-y-1">
           <div className="flex items-center justify-between">
             <p className="font-medium">Coursework</p>
-            {/* <span className="text-small italic text-default-400">GPA: 4.0</span> */}
-            <span className="text-small italic text-default-400">...</span>
+            <span className="text-small italic text-default-400">GPA: 4.0</span>
+            {/* <span className="text-small italic text-default-400">...</span> */}
           </div>
           <ul className="list-disc list-inside pl-1 text-small text-default-500 space-y-1">
             <li>CS 216 Object-Oriented Programming C++</li>
