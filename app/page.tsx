@@ -45,9 +45,10 @@ export default function Home() {
               </p>
 
               <p className="leading-relaxed text-default-700">
-                This portfolio highlights selected projects focused on applied
-                machine learning, reproducible analysis, and clear communication
-                of results.
+                This portfolio showcases my background in applied machine
+                learning through selected projects, education, skills, and
+                experience, with an emphasis on reproducible analysis and clear
+                communication of results.
               </p>
             </CardBody>
             {/* Data Scientist with hands-on experience in SQL, Python, and
