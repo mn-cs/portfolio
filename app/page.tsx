@@ -36,13 +36,25 @@ export default function Home() {
           <Card className="mt-3 ">
             <CardHeader> About </CardHeader>
             <Divider />
-            <CardBody>
-              <p>
-                Data Scientist with hands-on experience in SQL, Python, and
+            <CardBody className="space-y-4">
+              <p className="leading-relaxed text-default-700">
+                I am a Data Scientist with graduate-level training in machine
+                learning, statistics, and data analysis. I work with Python and
+                SQL to build end-to-end data solutions, including data
+                pipelines, statistical analysis, and predictive modeling.
+              </p>
+
+              <p className="leading-relaxed text-default-700">
+                This portfolio highlights selected projects focused on applied
+                machine learning, reproducible analysis, and clear communication
+                of results.
+              </p>
+            </CardBody>
+            {/* Data Scientist with hands-on experience in SQL, Python, and
                 machine learning. Skilled in building data pipelines, performing
                 statistical analysis, and developing predictive models for
-                business insights.
-                {/* Motivated and detail-oriented Data Scientist with five years of
+                business insights. */}
+            {/* Motivated and detail-oriented Data Scientist with five years of
                 programming experience and a solid foundation in full-stack web
                 development. Proficient in SQL, Python, and data visualization
                 tools for extracting and clearly communicating actionable
@@ -51,8 +63,7 @@ export default function Home() {
                 experienced professionals, and grow through real-world projects.
                 Passionate about solving problems, optimizing processes, and
                 continuously developing both technical and interpersonal skills. */}
-              </p>
-            </CardBody>
+
             {/* <Divider /> */}
             {/* <CardFooter></CardFooter> */}
           </Card>
