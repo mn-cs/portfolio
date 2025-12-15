@@ -16,7 +16,7 @@ export default function Experience() {
             <p className="text-md">
               Data Scientist and Machine Learning Engineer
             </p>
-            <p className="text-small text-default-500">Jan 2023 - Present</p>
+            <p className="text-small text-default-500">Sep 2024 - Present</p>
           </div>
         </CardBody>
         <Divider />
@@ -152,7 +152,7 @@ export default function Experience() {
         <CardBody>
           <div className="flex flex-col">
             <p className="text-md">Web Analyst / Developer</p>
-            <p className="text-small text-default-500">Mar 2019 - Jan 2023</p>
+            <p className="text-small text-default-500">May 2022 - Jan 2023</p>
           </div>
         </CardBody>
 
