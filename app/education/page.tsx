@@ -32,7 +32,8 @@ export default function DocsPage() {
             <span className="text-small italic text-default-400">GPA: 4.0</span>
           </div>
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
-            <li>DSC 257R: Unsupervised Learning</li>
+            <li>DSC 232R Big Data Analytics Using Spark</li>
+            <li>DSC 257R Unsupervised Learning</li>
             <li>DSC 208R Data Management for Analytics</li>
             <li>DSC 255R Machine Learning Fundamentals</li>
             <li>DSC 207R Python for Data Science</li>
