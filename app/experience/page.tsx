@@ -8,14 +8,15 @@ export default function Experience() {
     <div className="">
       <Card className="mb-3">
         <CardHeader className="flex gap-3">
-          <p className="text-md ">Graduate Program at UC San Diego </p>
+          <p className="text-md ">Graduate Program — Data Science (M.S.)</p>
         </CardHeader>
         <Divider />
         <CardBody>
           <div className="flex flex-col">
             <p className="text-md">
-              Data Scientist and Machine Learning Engineer
+              UC San Diego 
             </p>
+            {/* <p className="text-small text-default-500">Sep 2024 - Present</p> */}
             <p className="text-small text-default-500">Sep 2024 - Present</p>
           </div>
         </CardBody>
@@ -146,13 +147,14 @@ export default function Experience() {
       </Card>
       <Card className="mb-3">
         <CardHeader className="flex gap-3">
-          <p className="text-md">In UAE LLc (Remote) </p>
+          <p className="text-md">Web Development (Self-Directed Practice)</p>
         </CardHeader>
         <Divider />
         <CardBody>
           <div className="flex flex-col">
-            <p className="text-md">Web Analyst / Developer</p>
-            <p className="text-small text-default-500">May 2022 - Jan 2023</p>
+            <p className="text-md">Remote</p>
+            {/* <p className="text-small text-default-500">May 2022 - Jan 2023</p> */}
+            <p className="text-small text-default-500">Past</p>
           </div>
         </CardBody>
 
@@ -170,9 +172,10 @@ export default function Experience() {
             <li>
               Data-Driven Applications:{" "}
               <span className="text-small text-default-500">
-                Designed and maintained web applications by integrating REST
-                APIs for automation, managing code with version control,
-                debugging, and deploying to cloud environments.
+                Developed and deployed small web applications while 
+                practicing modern frameworks (Next.js, HeroUI), 
+                version control (GitHub), and cloud deployment 
+                workflows (Vercel).
               </span>
             </li>
           </ul>
