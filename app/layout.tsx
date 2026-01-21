@@ -78,7 +78,7 @@ export default function RootLayout({
           sizes="96x96"
           href="/favicon-96x96.png"
         />
-        <link rel="canonical" href="https://www.michaelbennett.dev/" />
+        <link rel="canonical" href="https://www.michaelhayk.com/" />
       </head>
       <body
         className={clsx(

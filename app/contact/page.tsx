@@ -27,7 +27,7 @@ export default function PricingPage() {
         <Divider />
         <div className="flex items-center justify-between ">
           <div>
-            <p className="pt-5 pl-6  text-default-500">michaelbennett.dev</p>
+            <p className="pt-5 pl-6  text-default-500">michaelhayk.com</p>
             <p className="pt-5 pl-6 pb-7 text-[12px] text-default-500">
               Scan the QR code to visit my portfolio
             </p>
