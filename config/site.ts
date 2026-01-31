@@ -64,7 +64,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/micben-cs",
+    github: "https://github.com/mn-cs",
     linkedin: "https://www.linkedin.com/in/mikewm/",
   },
 };
