@@ -25,8 +25,8 @@ export default function Home() {
             <Divider />
             <CardBody>
               <p>
-                Data Scientist with expertise in data analysis, machine
-                learning, and visualization.
+                Data Scientist with hands-on project experience in data
+                analysis, machine learning, and visualization.
               </p>
             </CardBody>
             <Divider />
