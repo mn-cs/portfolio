@@ -16,27 +16,33 @@ export default function DocsPage() {
         <Divider />
         {/* Degree & Dates */}
         <CardBody className="px-5 space-y-1">
-          <p className="text-medium font-medium">
-            Master&apos;s Degree in Data Science
-          </p>
+          <div className="flex items-center justify-between">
+            <p className="text-medium font-medium">
+              Master&apos;s Degree in Data Science
+            </p>
+            <span className="text-small italic text-default-400">GPA: 4.0</span>
+          </div>
           <p className="text-small text-default-500">
+            {/* September 2024 - June 2027 */}
             September 2024 - June 2027
           </p>
         </CardBody>
         <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
-          <div className="flex items-center justify-between">
-            <p className="font-medium">Coursework</p>
-            <span className="text-small italic text-default-400">GPA: 4.0</span>
-          </div>
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
-            <li>DSC 232R Big Data Analytics Using Spark</li>
+            {/* <li>DSC 232R Big Data Analytics Using Spark</li>
             <li>DSC 257R Unsupervised Learning</li>
             <li>DSC 208R Data Management for Analytics</li>
             <li>DSC 255R Machine Learning Fundamentals</li>
             <li>DSC 207R Python for Data Science</li>
-            <li>DSC 215R Probability and Statistics in Data Science</li>
+            <li>DSC 215R Probability and Statistics in Data Science</li> */}
+            <li> Big Data Analytics Using Spark</li>
+            <li> Unsupervised Learning</li>
+            <li> Data Management for Analytics</li>
+            <li> Machine Learning Fundamentals</li>
+            <li> Python for Data Science</li>
+            <li> Probability and Statistics in Data Science</li>
           </ul>
         </CardBody>
         <Divider />
@@ -55,9 +61,12 @@ export default function DocsPage() {
         <Divider />
         {/* Program Name & Dates */}
         <CardBody className="px-5 space-y-1">
-          <p className="text-medium font-medium">
-            Computer Science and Data Science
-          </p>
+          <div className="flex items-center justify-between">
+            <p className="text-medium font-medium">
+              Computer Science and Data Science
+            </p>
+            <span className="text-small italic text-default-400">GPA: 4.0</span>
+          </div>
           <p className="text-small text-default-500">
             February 2022 - June 2024
           </p>
@@ -65,17 +74,19 @@ export default function DocsPage() {
         <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
-          <div className="flex items-center justify-between">
-            <p className="font-medium">Coursework</p>
-            <span className="text-small italic text-default-400">GPA: 4.0</span>
-          </div>
           <ul className="list-disc list-inside pl-1 text-small text-default-500 space-y-1">
-            <li>CS 216 Object-Oriented Programming C++</li>
+            {/* <li>CS 216 Object-Oriented Programming C++</li>
             <li>CS 119 Python Programming</li>
             <li>CS 116 Programming in C++</li>
             <li>MATH 229 Statistics for Data Science</li>
             <li>MATH 261 Calculus I</li>
-            <li>MATH 260 Precalculus</li>
+            <li>MATH 260 Precalculus</li> */}
+            <li> Object-Oriented Programming C++</li>
+            <li> Python Programming</li>
+            <li> Programming in C++</li>
+            <li> Statistics for Data Science</li>
+            <li> Calculus I</li>
+            <li> Precalculus</li>
           </ul>
         </CardBody>
 
@@ -110,10 +121,10 @@ export default function DocsPage() {
         <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
-          <p className="font-medium">Coursework</p>
+          {/* <p className="font-medium">Coursework</p> */}
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
-            <li>DESMA X 481.61 Frontend Web Coding Bootcamp</li>
-            <li>COM SCI X 414.20 Fundamentals of Software Development</li>
+            <li>Frontend Web Coding Bootcamp</li>
+            <li>Fundamentals of Software Development</li>
           </ul>
         </CardBody>
         <Divider />
@@ -161,7 +172,7 @@ export default function DocsPage() {
         <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
-          <p className="font-medium">Coursework</p>
+          {/* <p className="font-medium">Coursework</p> */}
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
             <li>Tools for Data Science</li>
             <li>What is Data Science?</li>

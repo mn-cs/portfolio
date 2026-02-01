@@ -13,9 +13,7 @@ export default function Experience() {
         <Divider />
         <CardBody>
           <div className="flex flex-col">
-            <p className="text-md">
-              UC San Diego 
-            </p>
+            <p className="text-md">UC San Diego</p>
             <p className="text-small text-default-500">Sep 2024 - Present</p>
           </div>
         </CardBody>
@@ -23,6 +21,40 @@ export default function Experience() {
         <CardBody>
           <ul className="list-disc list-outside pl-6 space-y-2">
             <li>
+              End-to-end data science workflows:{" "}
+              <span className="text-small text-default-500">
+                Built complete pipelines including data collection (CSV/JSON),
+                cleaning, feature engineering, and analysis using Python,
+                Pandas, NumPy, and SQL.
+              </span>
+            </li>
+
+            <li>
+              Exploratory data analysis and statistics:{" "}
+              <span className="text-small text-default-500">
+                Performed exploratory analysis, statistical testing, and
+                visualization to identify patterns and clearly communicate
+                insights.
+              </span>
+            </li>
+
+            <li>
+              Machine learning modeling and optimization:{" "}
+              <span className="text-small text-default-500">
+                Developed and optimized machine learning models with
+                scikit-learn using cross-validation and hyperparameter tuning.
+              </span>
+            </li>
+
+            <li>
+              Reproducibility and transparency:{" "}
+              <span className="text-small text-default-500">
+                Ensured analyses could be replicated through well-documented
+                notebooks, version control, and structured pipelines.
+              </span>
+            </li>
+
+            {/* <li>
               Data collection:{" "}
               <span className="text-small text-default-500">
                 Gathered data from verified sources, downloaded CSV, JSON, and
@@ -88,8 +120,8 @@ export default function Experience() {
               <span className="text-small text-default-500">
                 Protected sensitive information through de-identification and
                 ethical practices, following data governance standards.
-              </span>
-            </li>
+              </span> 
+            </li> */}
           </ul>
         </CardBody>
       </Card>
@@ -112,10 +144,9 @@ export default function Experience() {
             <li>
               Data-Driven Applications:{" "}
               <span className="text-small text-default-500">
-                Developed and deployed small web applications while 
-                practicing modern frameworks (Next.js, HeroUI), 
-                version control (GitHub), and cloud deployment 
-                workflows (Vercel).
+                Developed and deployed small web applications while practicing
+                modern frameworks (Next.js, HeroUI), version control (GitHub),
+                and cloud deployment workflows (Vercel).
               </span>
             </li>
           </ul>
