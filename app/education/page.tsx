@@ -63,7 +63,7 @@ export default function DocsPage() {
         <CardBody className="px-5 space-y-1">
           <div className="flex items-center justify-between">
             <p className="text-medium font-medium">
-              Computer Science and Data Science
+              Computer Science / Data Science
             </p>
             <span className="text-small italic text-default-400">GPA: 4.0</span>
           </div>
@@ -179,7 +179,7 @@ export default function DocsPage() {
             <li>Data Science Methodology</li>
             <li>Python for Data Science, AI & Development</li>
             <li>Data Analysis with Python</li>
-            <li>Databases and SQL for Data Science with Python</li>
+            <li>Databases and SQL for Data Science</li>
             <li>Machine Learning with Python</li>
             <li>Data Visualization with Python</li>
             <li>Applied Data Science Capstone</li>
