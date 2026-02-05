@@ -38,6 +38,19 @@ export default function DocsPage() {
         </CardBody>
       </Card>
 
+      <Card className="w-full mx-auto mb-3">
+        <CardHeader className="px-5 text-lg font-semibold">
+          Big Data & Distributed Systems
+        </CardHeader>
+        <Divider />
+        <CardBody className="px-5 text-default-500 text-medium">
+          <ul className="list-disc list-inside space-y-1">
+            <li>Apache Spark</li>
+            <li>PySpark</li>
+          </ul>
+        </CardBody>
+      </Card>
+
       <Card className="w-full  mx-auto mb-3">
         <CardHeader className="px-5 text-lg font-semibold">
           Databases & Data Tools
@@ -45,6 +58,7 @@ export default function DocsPage() {
         <Divider />
         <CardBody className="px-5 text-default-500 text-medium">
           <ul className="list-disc list-inside space-y-1">
+            <li>PostgreSQL</li>
             <li>SQLite</li>
             {/* <li>MongoDB</li> */}
           </ul>
@@ -77,7 +91,6 @@ export default function DocsPage() {
           <ul className="list-disc list-inside space-y-1">
             <li>English (Fluent)</li>
             <li>Armenian (Native)</li>
-            {/* <li>Russian (Advanced)</li> */}
           </ul>
         </CardBody>
       </Card>
