@@ -24,13 +24,13 @@ export const siteConfig = {
       label: "Skills",
       href: "/skills",
     },
-    // {
-    //   label: "Certificates",
-    //   href: "/certificates",
-    // },
     {
       label: "Contact",
       href: "/contact",
+    },
+    {
+      label: "Resume",
+      href: "/resume",
     },
   ],
   navMenuItems: [
@@ -54,13 +54,13 @@ export const siteConfig = {
       label: "Skills",
       href: "/skills",
     },
-    // {
-    //   label: "Certificates",
-    //   href: "/certificates",
-    // },
     {
       label: "Contact",
       href: "/contact",
+    },
+    {
+      label: "Resume",
+      href: "/resume",
     },
   ],
   links: {

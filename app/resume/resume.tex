@@ -1,0 +1,186 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{transparent}
+\usepackage{changepage}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks,
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=NavyBlue,
+  pdfborder={0 0 0}
+}
+
+\setlength{\footskip}{10pt} % Added to fix light warning
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Use geometry package for margins instead of manual adjustments
+\usepackage[margin=0.5in]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Resume Summary command
+\newcommand{\resumeSummary}[1]{
+  \begin{adjustwidth}{0.1in}{0.1in} % Adds 0.1in margins on both sides
+    \normalsize #1 % Ensures compact text 
+  \end{adjustwidth} \vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} l}
+  % \textbf{Hayk (Michael) Pashinyan}
+  {\Large\textbf{Michael Hayk}}
+  & \textbf{- Email:} \href{mailto:Email Address}{Email Address} \\
+  & \textbf{- Mobile:} Phone Number \\
+
+\end{tabular*}
+\vspace{-7pt}
+
+%-----------SUMMARY-----------------   
+\section{Summary}
+\resumeSummary{Data Scientist with project experience in Python, SQL, and machine learning. Focused on building data pipelines, statistical analysis, and predictive modeling with emphasis on machine learning model optimization.}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of California San Diego}{San Diego, CA}
+% {Master of Science in Data Science}{September 2024 -- June 2027}
+{Master of Science in Data Science}{September 2024 -- June 2027}
+\resumeSubheading
+{Armenian National University}{Yerevan, Armenia}
+{Bachelor of Engineering}{August 2013 -- July 2017}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Skills}
+\resumeSubHeadingListStart
+\item{
+            \textbf{Languages}{: Python, SQL}
+            \hfill
+            \textbf{Technologies}{: AWS, Spark, Git, VS Code}
+      }
+\resumeSubHeadingListEnd
+
+% %-----------PROJECTS-----------------
+% \section{Projects}
+% \resumeSubHeadingListStart
+
+% \item \textbf{Success Factors | \href{https://github.com/mn-cs/successfactors/tree/main}{[GitHub Link]}}
+% \begin{itemize}
+%   \item \textbf{Data collection} fetched billionaire data from Forbes API and scraped biographical information from Wikipedia, creating comprehensive dataset for analysis.
+%   \item \textbf{Data cleaning Wrangling} created modular functions to trim columns, parse education fields into structured components, and convert JSON to organized DataFrames.
+%   \item \textbf{Exploratory data analysis EDA} conducted SQL analysis of 2,919 records, performing statistical analysis with numpy and demographic segmentation to identify key patterns and business insights.
+%   \item \textbf{Visualization} created multi-panel charts using matplotlib and seaborn to analyze wealth distributions, geographic patterns, and demographic trends.
+%   \item \textbf{Reproducibility} established reproducible analysis pipeline with virtual environments, Docker containerization, version-controlled notebooks, and automated testing workflows.
+% \end{itemize}
+
+% \item \textbf{Feature Representation Analysis | \href{https://github.com/mn-cs/image-representation}{[GitHub Link]}}
+% \begin{itemize}
+%   \item \textbf{Statistical Modeling} designed controlled experiments to compare 4 feature methods and analyzed CNN architecture performance using statistical tests.
+%   \item \textbf{Machine Learning} implemented multi-modal pipeline with 4 extraction methods (raw pixels, HOG, pretrained CNN, random CNN) and k-nearest neighbor classification.
+%   \item \textbf{Dimensionality reduction} applied PCA and t-SNE to visualize high-dimensional features and improve computational efficiency.
+%   \item \textbf{Classification models} developed algorithms to analyze and categorize visual data with improved accuracy metrics.
+% \end{itemize}
+
+% \item \textbf{Machine Learning Models | \href{https://github.com/mn-cs/projectWeb/tree/main}{[GitHub Link]}}
+% \begin{itemize}
+%   \item \textbf{Core algorithms} built Decision Trees, AdaBoost, Perceptrons, Lasso, and Support Vector Machines.
+%   \item \textbf{Advanced methods} explored kernel techniques and feature selection to optimize performance across datasets.
+%   \item \textbf{Custom implementation} developed algorithms from scratch alongside scikit-learn implementations.
+%   \item \textbf{Model tuning} used cross-validation and hyperparameter optimization for optimal accuracy.
+% \end{itemize}
+% \resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\item \textbf{Success Factors | \href{https://github.com/mn-cs/successfactors/tree/main}{GitHub}}
+\begin{itemize}
+  \item Built an end-to-end data pipeline by integrating \textbf{Forbes API} data with scraped Wikipedia biographies to create a comprehensive analysis dataset.
+  \item Developed modular data-cleaning functions to normalize schemas, parse education fields, and transform JSON into structured Pandas DataFrames.
+  \item Conducted SQL based exploratory analysis on \textbf{2,919 records}, applying statistical methods and demographic segmentation to identify key patterns and insights.
+  \item Created multi-panel visualizations using Matplotlib and Seaborn to analyze wealth distributions, geographic patterns, and demographic trends.
+  \item Ensured reproducibility through virtual environments, Docker containerization, version control, and documented analysis workflows.
+\end{itemize}
+
+\item \textbf{Feature Representation Analysis | \href{https://github.com/mn-cs/image-representation}{GitHub}}
+\begin{itemize}
+  \item Designed controlled experiments to compare \textbf{four feature extraction methods}, evaluating Convolutional Neural Network (CNN) representations using statistical tests.
+  \item Implemented a multi-modal machine learning pipeline using raw pixels, HOG features, pretrained CNN embeddings, and random CNN features with k-NN classification.
+  \item Applied PCA and t-SNE to reduce dimensionality, visualize high-dimensional feature spaces, and improve computational efficiency.
+  \item Evaluated classification performance using accuracy metrics to compare feature representations.
+\end{itemize}
+
+\item \textbf{Machine Learning Models | \href{https://github.com/mn-cs/projectWeb/tree/main}{GitHub}}
+\begin{itemize}
+  \item Implemented core machine learning algorithms including Decision Trees, AdaBoost, Perceptrons, Lasso, and Support Vector Machines.
+  \item Explored kernel methods and feature selection to optimize model performance across datasets.
+  \item Developed algorithms from scratch alongside scikit-learn implementations to validate correctness and performance.
+  \item Performed cross-validation and hyperparameter tuning to improve predictive accuracy.
+\end{itemize}
+
+\resumeSubHeadingListEnd
+
+
+%-----------LINKS-----------------
+\section{Links}
+\noindent
+\hspace{5em}
+\textbf{- Website:} \href{https://www.michaelhayk.com/projects}{michaelhayk.com}
+\hspace{5em}
+\textbf{- GitHub:} \href{https://github.com/mn-cs}{github.com/mn-cs}
+
+\end{document}
