@@ -3,7 +3,6 @@
 import { Card } from "@nextui-org/card";
 import { CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Divider } from "@nextui-org/divider";
-import qnaData from "../config/qnaData";
 
 export default function Home() {
   return (

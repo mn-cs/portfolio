@@ -1,7 +1,9 @@
 "use client";
+
 import { Card, CardHeader, CardFooter } from "@nextui-org/card";
-import { ExternalLinkIcon, JupyterIcon } from "@/components/icons";
 import { Image } from "@nextui-org/image";
+
+import { ExternalLinkIcon, JupyterIcon } from "@/components/icons";
 import projects from "@/config/projectData";
 
 export default function AboutPage() {
@@ -9,20 +11,20 @@ export default function AboutPage() {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {projects.map((project, index) => (
         <Card
-          isHoverable
           key={index}
-          as="a"
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
+          isHoverable
           isPressable
+          as="a"
           className="w-full flex flex-col "
+          href={project.link}
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <CardHeader className="opacity-80">
             <Image
+              removeWrapper
               alt={project.title}
               className="z-0"
-              removeWrapper
               src={project.image}
             />
           </CardHeader>

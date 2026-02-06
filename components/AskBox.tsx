@@ -1,4 +1,3 @@
-// components/ChatButton.tsx
 "use client";
 
 import { Card, CardBody } from "@nextui-org/card";
@@ -36,6 +35,7 @@ export default function ChatButton() {
     }
 
     const userMessage: Message = { text: input, sender: "user" };
+
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setError(null);
@@ -57,14 +57,16 @@ export default function ChatButton() {
       }
 
       const geminiMessage: Message = { text: data.text, sender: "gemini" };
+
       setMessages((prev) => [...prev, geminiMessage]);
     } catch (err: any) {
-      console.error("Error calling Gemini API:", err);
       setError(err.message || "An error occurred while fetching a response.");
+
       const errorMessage: Message = {
         text: `Error: ${err.message || "Something went wrong."}`,
         sender: "gemini",
       };
+
       setMessages((prev) => [...prev, errorMessage]); // Add error message to chat
     } finally {
       setLoading(false);
@@ -85,10 +87,10 @@ export default function ChatButton() {
       <div
         role="button"
         tabIndex={0}
-        onClick={toggleChat}
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") toggleChat();
         }}
+        onClick={toggleChat}
         style={{
           position: "fixed",
           bottom: "20px",
@@ -97,7 +99,7 @@ export default function ChatButton() {
           zIndex: 1000,
         }}
       >
-        <Avatar src="/pp.png" size="lg" isBordered color="default" />
+        <Avatar isBordered color="default" size="lg" src="/pp.png" />
       </div>
 
       {/* Chat Window */}
@@ -148,19 +150,19 @@ export default function ChatButton() {
             {" "}
             {/* Added border-t */}
             <Input
-              size="sm"
-              placeholder="Type a message..."
-              value={input}
-              onValueChange={setInput}
               className="flex-1"
-              onKeyDown={handleInputKeyDown}
               isDisabled={loading} // Disable input while loading
+              placeholder="Type a message..."
+              onKeyDown={handleInputKeyDown}
+              onValueChange={setInput}
+              size="sm"
+              value={input}
             />
             <Button
+              color="primary" // Assuming NextUI/HeroUI button has 'color' prop
+              isDisabled={loading || !input.trim()} // Disable send button while loading or input is empty
               size="sm"
               onClick={handleSend}
-              isDisabled={loading || !input.trim()} // Disable send button while loading or input is empty
-              color="primary" // Assuming NextUI/HeroUI button has 'color' prop
             >
               Send
             </Button>
@@ -170,163 +172,3 @@ export default function ChatButton() {
     </>
   );
 }
-
-// "use client";
-
-// import { Card, CardBody } from "@nextui-org/card";
-// import { Button } from "@heroui/button";
-// import { Input } from "@heroui/input";
-// import { Avatar } from "@heroui/avatar";
-// import { useState } from "react";
-
-// export default function ChatButton() {
-//   const [open, setOpen] = useState(false);
-//   const [input, setInput] = useState("");
-//   const [messages, setMessages] = useState<string[]>([]);
-
-//   const toggleChat = () => setOpen(!open);
-
-//   const handleSend = () => {
-//     if (input.trim()) {
-//       setMessages((prev) => [...prev, input]);
-//       setInput("");
-//     }
-//   };
-
-//   return (
-//     <>
-//       {/* Floating Avatar */}
-//       <div
-//         onClick={toggleChat}
-//         style={{
-//           position: "fixed",
-//           bottom: "20px",
-//           right: "20px",
-//           cursor: "pointer",
-//           zIndex: 1000,
-//         }}
-//       >
-//         <Avatar
-//           src="/mike.jpg" // replace with your image
-//           size="lg"
-//           isBordered
-//           color="primary"
-//         />
-//       </div>
-
-//       {/* Chat Window */}
-//       {open && (
-//         <Card
-//           style={{
-//             position: "fixed",
-//             bottom: "100px",
-//             right: "20px",
-//             width: "320px",
-//             height: "400px",
-//             zIndex: 1001,
-//             display: "flex",
-//             flexDirection: "column",
-//           }}
-//         >
-//           <CardBody className="overflow-y-auto flex-1 space-y-2 text-sm">
-//             {messages.map((msg, i) => (
-//               <div key={i} className="p-2 bg-default-100 rounded-md">
-//                 {msg}
-//               </div>
-//             ))}
-//           </CardBody>
-//           <div className="p-2 flex gap-2 items-center">
-//             <Input
-//               size="sm"
-//               placeholder="Type a message..."
-//               value={input}
-//               onValueChange={setInput}
-//               className="flex-1"
-//               onKeyDown={(e) => e.key === "Enter" && handleSend()}
-//             />
-//             <Button size="sm" onClick={handleSend}>
-//               Send
-//             </Button>
-//           </div>
-//         </Card>
-//       )}
-//     </>
-//   );
-// }
-
-// "use client";
-
-// import { useState } from "react";
-
-// export default function AskBox() {
-//   const [prompt, setPrompt] = useState("");
-//   const [response, setResponse] = useState("");
-//   const [loading, setLoading] = useState(false);
-//   const [error, setError] = useState("");
-
-//   const handleSubmit = async (e: React.FormEvent) => {
-//     e.preventDefault();
-//     if (!prompt.trim()) {
-//       setError("Please enter a prompt.");
-//       return;
-//     }
-
-//     setLoading(true);
-//     setResponse("");
-//     setError("");
-
-//     try {
-//       const res = await fetch("/api/ask", {
-//         // Correct path to your API route
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify({ prompt }),
-//       });
-
-//       const data = await res.json();
-
-//       if (!res.ok) {
-//         throw new Error(data.error || "Something went wrong.");
-//       }
-
-//       setResponse(data.text);
-//     } catch (err: any) {
-//       console.error("Frontend error:", err);
-//       setError(err.message || "Failed to get a response.");
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
-
-//   return (
-//     <div className="m-5 flex">
-//       <form onSubmit={handleSubmit}>
-//         <textarea
-//           value={prompt}
-//           onChange={(e) => setPrompt(e.target.value)}
-//           placeholder="Ask Mike anything..."
-//           rows={5}
-//           className="w-full max-w-[400px] p-2 border rounded"
-//           disabled={loading}
-//         />
-//         <button
-//           type="submit"
-//           className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:opacity-50"
-//           disabled={loading}
-//         >
-//           {loading ? "Generating..." : "Ask Mike"}
-//         </button>
-//       </form>
-
-//       {error && <p className="mt-4 text-red-500">{error}</p>}
-//       {response && (
-//         <div className="mt-4 p-4 rounded">
-//           <h3 className="font-bold">Mike's Response:</h3>
-//           <p className="whitespace-pre-wrap">{response}</p>
-//         </div>
-//       )}
-//     </div>
-//   );
-// }

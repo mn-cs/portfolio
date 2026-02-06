@@ -139,7 +139,7 @@ export default function Experience() {
 
         <Divider />
         <CardBody>
-          <div className="relative col-span-6 md:col-span-4"></div>
+          <div className="relative col-span-6 md:col-span-4" />
           <ul className="list-disc list-outside pl-6 space-y-2">
             <li>
               Data-Driven Applications:{" "}

@@ -1,16 +1,18 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
+import { Divider } from "@nextui-org/divider";
 import { Link } from "@nextui-org/link";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import clsx from "clsx";
-import { Providers } from "./providers";
+import { Metadata, Viewport } from "next";
+import Script from "next/script";
+
+import { GithubIcon, LinkedInIcon } from "@/components/icons";
+import { Navbar } from "@/components/navbar";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
-import { Navbar } from "@/components/navbar";
-import { Divider } from "@nextui-org/divider";
-import { GithubIcon, LinkedInIcon } from "@/components/icons";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next";
-import AskBox from "@/components/AskBox";
+
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: {
@@ -36,10 +38,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Google Tag Manager */}
-        <script
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -49,41 +51,43 @@ export default function RootLayout({
               })(window,document,'script','dataLayer','GTM-T29GPCFH');
             `,
           }}
+          id="gtm-script"
+          strategy="afterInteractive"
         />
         {/* End Google Tag Manager */}
         <meta
-          name="google-site-verification"
           content="Ju9v4ymkCxJzPMLmV7iGjxqPNLUjMthdP4UGCSBFN-c"
+          name="google-site-verification"
         />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="/apple-icon.png" rel="apple-touch-icon" sizes="180x180" />
 
-        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-        <link rel="manifest" href="/manifest.json" />
+        <link href="/icon.svg" rel="icon" type="image/svg+xml" />
+        <link href="/manifest.json" rel="manifest" />
         <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
           href="/favicon-192x192.png"
+          rel="icon"
+          sizes="192x192"
+          type="image/png"
         />
         <link
-          rel="icon"
-          type="image/png"
-          sizes="512x512"
           href="/favicon-512x512.png"
+          rel="icon"
+          sizes="512x512"
+          type="image/png"
         />
         <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
           href="/favicon-96x96.png"
+          rel="icon"
+          sizes="96x96"
+          type="image/png"
         />
         <link rel="canonical" href="https://www.michaelhayk.com/" />
       </head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         {/* Google Tag Manager (noscript) */}
@@ -107,16 +111,16 @@ export default function RootLayout({
             <footer className="w-full py-4  text-white flex flex-col items-center space-y-2">
               <div className="flex justify-end items-center space-x-4 mb-7 mt-5">
                 <Link
-                  isExternal
                   aria-label="Github"
                   href={siteConfig.links.github}
+                  isExternal
                 >
                   <GithubIcon className="text-default-500 w-8 h-8" />
                 </Link>
                 <Link
-                  isExternal
                   aria-label="LinkedIn"
                   href={siteConfig.links.linkedin}
+                  isExternal
                 >
                   <LinkedInIcon className="text-default-500 w-8 h-8" />
                 </Link>
@@ -129,7 +133,7 @@ export default function RootLayout({
                   <span> {new Date().getFullYear()} </span>
                   <span>Michael Hayk</span>
                 </p>
-                <p className="text-default-600"></p>
+                <p className="text-default-600" />
               </div>
             </footer>
           </div>

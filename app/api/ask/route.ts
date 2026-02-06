@@ -9,7 +9,7 @@ export async function POST(request: Request) {
     if (!apiKey) {
       return NextResponse.json(
         { error: "Gemini API key not configured." },
-        { status: 500 }
+        { status: 500 },
       );
     }
 
@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     if (!prompt) {
       return NextResponse.json(
         { error: "Prompt is required." },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -36,13 +36,13 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ text });
   } catch (error: any) {
-    console.error("Error in Gemini API route:", error);
     if (error.response && error.response.status === 429) {
       return NextResponse.json(
         { error: "Too many requests. Please try again later." },
-        { status: 429 }
+        { status: 429 },
       );
     }
+
     if (
       error.response &&
       error.response.status === 400 &&
@@ -50,7 +50,7 @@ export async function POST(request: Request) {
     ) {
       return NextResponse.json(
         { error: "Response blocked due to safety concerns." },
-        { status: 400 }
+        { status: 400 },
       );
     }
     // Catch the specific 404 error if it still occurs with new models
@@ -60,12 +60,12 @@ export async function POST(request: Request) {
           error:
             "Model not found or not accessible. Check your API key and model name.",
         },
-        { status: 404 }
+        { status: 404 },
       );
     }
     return NextResponse.json(
       { error: "An unexpected error occurred.", details: error.message },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import {
   Navbar as NextUINavbar,
@@ -13,6 +14,7 @@ import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
 import { Link } from "@nextui-org/link";
+
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { Logo } from "@/components/icons";
@@ -23,26 +25,27 @@ export const Navbar = () => {
   const handleMenuClose = () => {
     setIsMenuOpen(false);
   };
+
   return (
     <NextUINavbar
-      maxWidth="xl"
-      position="sticky"
       isBordered
       isMenuOpen={isMenuOpen}
+      maxWidth="xl"
       onMenuOpenChange={setIsMenuOpen}
+      position="sticky"
     >
       <NavbarContent className="basis-1/5 sm:basis-full justify-start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <Link
             className={clsx(
               linkStyles({ color: "foreground" }),
-              "data-[active=true]:text-primary data-[active=true]:font-medium"
+              "data-[active=true]:text-primary data-[active=true]:font-medium",
             )}
             href="/"
             onPress={handleMenuClose}
           >
             <Logo />
-            <p className="font-bold text-inherit pl-2"></p>{" "}
+            <p className="font-bold text-inherit pl-2" />{" "}
             {/*Saved for logo name*/}
           </Link>
         </NavbarBrand>
@@ -51,11 +54,11 @@ export const Navbar = () => {
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
+                aria-label={`Navigate to ${item.label}`}
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium"
+                  "data-[active=true]:text-primary data-[active=true]:font-medium",
                 )}
-                aria-label={`Navigate to ${item.label}`}
                 color="foreground"
                 href={item.href}
               >
@@ -83,7 +86,7 @@ export const Navbar = () => {
                 aria-label={`Navigate to ${item.label}`}
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium"
+                  "data-[active=true]:text-primary data-[active=true]:font-medium",
                 )}
                 href={item.href}
                 onClick={handleMenuClose}

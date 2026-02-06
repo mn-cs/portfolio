@@ -1,6 +1,7 @@
 "use client";
 import { Card } from "@nextui-org/card";
 import { Divider } from "@nextui-org/divider";
+import Image from "next/image";
 
 export default function PricingPage() {
   return (
@@ -32,10 +33,12 @@ export default function PricingPage() {
               Scan the QR code to visit my portfolio
             </p>
           </div>
-          <img
-            src="/b_card/qr-code.svg"
+          <Image
             alt="QR Code"
             className="w-[108px] pr-5 opacity-70"
+            height={108}
+            src="/b_card/qr-code.svg"
+            width={108}
           />
         </div>
         <Divider />

@@ -2,23 +2,12 @@
 
 import { Card, CardHeader, CardBody } from "@nextui-org/card";
 import { Button } from "@heroui/button";
-
 import React from "react";
 
-type ResumePdfViewerProps = {
-  /** Public URL to the PDF (e.g., "/resume.pdf") */
-  pdfUrl?: string;
-  /** Optional title shown above the viewer */
-  title?: string;
-  /** Height of the viewer area */
-  heightPx?: number;
-};
+const PDF_URL = "/Michael-Hayk-Resume.pdf";
+const PAGE_TITLE = "Resume";
 
-export default function ResumePdfViewer({
-  pdfUrl = "/Michael-Hayk-Resume.pdf",
-  title = "Resume",
-  heightPx = 900,
-}: ResumePdfViewerProps) {
+export default function ResumePage() {
   return (
     <div className="w-full">
       <Card className="w-full">
@@ -33,10 +22,10 @@ export default function ResumePdfViewer({
             >
               <div className="w-full h-[70vh] md:h-[900px]">
                 <iframe
-                  src={`${pdfUrl}#view=FitH`}
-                  title="Michael Hayk Resume"
                   className="w-full h-full"
+                  src={`${PDF_URL}#view=FitH`}
                   style={{ border: "0" }}
+                  title="Michael Hayk Resume"
                 />
               </div>
             </div>
@@ -51,27 +40,27 @@ export default function ResumePdfViewer({
 
         <CardHeader className="flex items-center justify-between gap-3">
           <div className="flex flex-col">
-            <div className="text-lg font-semibold">{title}</div>
+            <div className="text-lg font-semibold">{PAGE_TITLE}</div>
             <div className="text-sm text-foreground-500">Embedded PDF</div>
           </div>
 
           <div className="flex items-center gap-2">
             <Button
               as="a"
-              href={pdfUrl}
-              target="_blank"
+              href={PDF_URL}
               rel="noreferrer"
-              variant="flat"
               size="sm"
+              target="_blank"
+              variant="flat"
             >
               Open in new tab
             </Button>
 
             <Button
               as="a"
-              href={pdfUrl}
-              download="Michael-Hayk-Resume.pdf"
               color="primary"
+              download="Michael-Hayk-Resume.pdf"
+              href={PDF_URL}
               size="sm"
             >
               Download
