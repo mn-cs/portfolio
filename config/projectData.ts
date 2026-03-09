@@ -1,13 +1,18 @@
 const projects = [
   {
-    title: "Feature Representation Analysis",
-    image: "plots/cifar.png",
-    link: "https://github.com/mn-cs/image-representation",
+    title: "FineWeb-Edu Dataset Analysis with PySpark",
+    image: "plots/frq_domains.png",
+    link: "https://github.com/mn-cs/fineweb-spark/tree/main",
   },
   {
     title: "Billionaires Data Analysis",
     image: "plots/successfactors.png",
     link: "https://github.com/mn-cs/successfactors/tree/main",
+  },
+  {
+    title: "Feature Representation Analysis",
+    image: "plots/cifar.png",
+    link: "https://github.com/mn-cs/image-representation",
   },
   {
     title: "Decision Tree Classification Analysis",
