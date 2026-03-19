@@ -31,12 +31,7 @@ export default function DocsPage() {
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
-            {/* <li>DSC 232R Big Data Analytics Using Spark</li>
-            <li>DSC 257R Unsupervised Learning</li>
-            <li>DSC 208R Data Management for Analytics</li>
-            <li>DSC 255R Machine Learning Fundamentals</li>
-            <li>DSC 207R Python for Data Science</li>
-            <li>DSC 215R Probability and Statistics in Data Science</li> */}
+            <li> Natural-Language Processing</li>
             <li> Big Data Analytics Using Spark</li>
             <li> Unsupervised Learning</li>
             <li> Data Management for Analytics</li>
