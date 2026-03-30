@@ -23,8 +23,8 @@ export default function DocsPage() {
             <span className="text-small italic text-default-400">GPA: 4.0</span>
           </div>
           <p className="text-small text-default-500">
-            {/* September 2024 - June 2027 */}
             September 2024 - June 2027
+            {/* September 2024 - June 2027 */}
           </p>
         </CardBody>
         <Divider />
