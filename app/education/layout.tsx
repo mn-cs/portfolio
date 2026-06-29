@@ -1,4 +1,4 @@
-export default function BlogLayout({
+export default function EducationLayout({
   children,
 }: {
   children: React.ReactNode;

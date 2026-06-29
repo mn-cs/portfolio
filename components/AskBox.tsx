@@ -1,10 +1,10 @@
 "use client";
 
-import { Card, CardBody } from "@nextui-org/card";
-import { Button } from "@heroui/button"; // Assuming @heroui/button exists
-import { Input } from "@heroui/input"; // Assuming @heroui/input exists
-import { Avatar } from "@heroui/avatar"; // Assuming @heroui/avatar exists
-import { useState, useRef, useEffect } from "react"; // Import useRef and useEffect
+import { Card, CardBody } from "@heroui/card";
+import { Button } from "@heroui/button";
+import { Input } from "@heroui/input";
+import { Avatar } from "@heroui/avatar";
+import { useState, useRef, useEffect } from "react";
 
 interface Message {
   text: string;
@@ -18,15 +18,13 @@ export default function ChatButton() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const messagesEndRef = useRef<HTMLDivElement>(null); // Ref for auto-scrolling
+  const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const toggleChat = () => setOpen(!open);
 
   // Auto-scroll to the bottom of messages
   useEffect(() => {
-    if (messagesEndRef.current) {
-      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   const handleSend = async () => {
@@ -47,7 +45,7 @@ export default function ChatButton() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ prompt: input }), // Send user's input as prompt
+        body: JSON.stringify({ prompt: input }),
       });
 
       const data = await res.json();
@@ -60,14 +58,14 @@ export default function ChatButton() {
 
       setMessages((prev) => [...prev, geminiMessage]);
     } catch (err: any) {
-      setError(err.message || "An error occurred while fetching a response.");
+      const message =
+        err.message || "An error occurred while fetching a response.";
 
-      const errorMessage: Message = {
-        text: `Error: ${err.message || "Something went wrong."}`,
-        sender: "gemini",
-      };
-
-      setMessages((prev) => [...prev, errorMessage]); // Add error message to chat
+      setError(message);
+      setMessages((prev) => [
+        ...prev,
+        { text: `Error: ${message}`, sender: "gemini" },
+      ]);
     } finally {
       setLoading(false);
     }
@@ -75,8 +73,7 @@ export default function ChatButton() {
 
   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
-      // Allow Shift+Enter for new lines if needed
-      e.preventDefault(); // Prevent new line in input
+      e.preventDefault();
       handleSend();
     }
   };
@@ -85,18 +82,13 @@ export default function ChatButton() {
     <>
       {/* Floating Avatar */}
       <div
+        aria-label="Open chat"
+        className="fixed bottom-5 right-5 z-50 cursor-pointer"
         role="button"
         tabIndex={0}
+        onClick={toggleChat}
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") toggleChat();
-        }}
-        onClick={toggleChat}
-        style={{
-          position: "fixed",
-          bottom: "20px",
-          right: "20px",
-          cursor: "pointer",
-          zIndex: 1000,
         }}
       >
         <Avatar isBordered color="default" size="lg" src="/pp.png" />
@@ -104,65 +96,50 @@ export default function ChatButton() {
 
       {/* Chat Window */}
       {open && (
-        <Card
-          style={{
-            position: "fixed",
-            bottom: "100px",
-            right: "20px",
-            width: "320px",
-            height: "400px",
-            zIndex: 1001,
-            display: "flex",
-            flexDirection: "column",
-            borderRadius: "0.75rem",
-          }}
-        >
-          <CardBody className="overflow-y-auto flex-1 p-4 space-y-3">
+        <Card className="fixed bottom-24 right-5 z-50 flex h-[400px] w-80 flex-col rounded-xl">
+          <CardBody className="flex-1 space-y-3 overflow-y-auto p-4">
             {messages.length === 0 && (
-              <div className="text-center text-gray-500 italic">
+              <div className="text-center italic text-default-500">
                 Ask me anything about the portfolio!
               </div>
             )}
             {messages.map((msg, i) => (
               <div
                 key={i}
-                className={`p-3 rounded-lg max-w-[80%] ${
+                className={`max-w-[80%] break-words rounded-lg p-3 ${
                   msg.sender === "user"
-                    ? "bg-blue-100 text-blue-800 self-end ml-auto" // Question messages on the right
-                    : "bg-gray-100 text-gray-800 self-start mr-auto" // Answer messages on the left
+                    ? "ml-auto self-end bg-primary text-primary-foreground"
+                    : "mr-auto self-start bg-default-100 text-foreground"
                 }`}
-                style={{ wordBreak: "break-word" }} // Ensure long words wrap
               >
                 {msg.text}
               </div>
             ))}
             {loading && (
-              <div className="self-start mr-auto text-gray-500 italic p-3 rounded-lg bg-gray-100">
+              <div className="mr-auto self-start rounded-lg bg-default-100 p-3 italic text-default-500">
                 Typing...
               </div>
             )}
             {error && (
-              <div className="text-red-500 text-center p-2">{error}</div>
+              <div className="p-2 text-center text-danger">{error}</div>
             )}
-            <div ref={messagesEndRef} /> {/* For auto-scrolling */}
+            <div ref={messagesEndRef} />
           </CardBody>
-          <div className="p-4 flex gap-2 items-center border-t border-gray-200">
-            {" "}
-            {/* Added border-t */}
+          <div className="flex items-center gap-2 border-t border-divider p-4">
             <Input
               className="flex-1"
-              isDisabled={loading} // Disable input while loading
+              isDisabled={loading}
               placeholder="Type a message..."
-              onKeyDown={handleInputKeyDown}
-              onValueChange={setInput}
               size="sm"
               value={input}
+              onKeyDown={handleInputKeyDown}
+              onValueChange={setInput}
             />
             <Button
-              color="primary" // Assuming NextUI/HeroUI button has 'color' prop
-              isDisabled={loading || !input.trim()} // Disable send button while loading or input is empty
+              color="primary"
+              isDisabled={loading || !input.trim()}
               size="sm"
-              onClick={handleSend}
+              onPress={handleSend}
             >
               Send
             </Button>
