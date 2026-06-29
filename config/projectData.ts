@@ -36,7 +36,7 @@ const projects = [
   },
   {
     title: "Multiclass Perceptron Implementation",
-    image: "plots/Multiclass Perceptron .png",
+    image: "plots/Multiclass_Perceptron.png",
     link: "https://github.com/mn-cs/projectWeb/blob/main/multiclass_perceptron/multiclass_perceptron.ipynb",
   },
   {

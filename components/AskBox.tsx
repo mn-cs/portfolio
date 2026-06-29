@@ -91,7 +91,7 @@ export default function ChatButton() {
           if (e.key === "Enter" || e.key === " ") toggleChat();
         }}
       >
-        <Avatar isBordered color="default" size="lg" src="/pp.png" />
+        <Avatar isBordered color="default" size="lg" src="/img/pp.png" />
       </div>
 
       {/* Chat Window */}

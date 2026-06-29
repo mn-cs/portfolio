@@ -60,24 +60,28 @@ export default function RootLayout({
           name="google-site-verification"
         />
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <link href="/apple-icon.png" rel="apple-touch-icon" sizes="180x180" />
+        <link
+          href="/icons/apple-icon.png"
+          rel="apple-touch-icon"
+          sizes="180x180"
+        />
 
-        <link href="/icon.svg" rel="icon" type="image/svg+xml" />
+        <link href="/icons/icon.svg" rel="icon" type="image/svg+xml" />
         <link href="/manifest.json" rel="manifest" />
         <link
-          href="/favicon-192x192.png"
+          href="/icons/web-app-manifest-192x192.png"
           rel="icon"
           sizes="192x192"
           type="image/png"
         />
         <link
-          href="/favicon-512x512.png"
+          href="/icons/web-app-manifest-512x512.png"
           rel="icon"
           sizes="512x512"
           type="image/png"
         />
         <link
-          href="/favicon-96x96.png"
+          href="/icons/favicon-96x96.png"
           rel="icon"
           sizes="96x96"
           type="image/png"
