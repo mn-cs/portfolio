@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.michaelhayk.com/sitemap.xml
+Sitemap: https://michaelhayk.com/sitemap.xml

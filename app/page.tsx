@@ -1,8 +1,8 @@
 "use client";
 
-import { Card } from "@nextui-org/card";
-import { CardHeader, CardBody, CardFooter } from "@nextui-org/card";
-import { Divider } from "@nextui-org/divider";
+import { Card } from "@heroui/card";
+import { CardHeader, CardBody, CardFooter } from "@heroui/card";
+import { Divider } from "@heroui/divider";
 
 export default function Home() {
   return (

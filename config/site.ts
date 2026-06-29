@@ -17,6 +17,10 @@ export const siteConfig = {
       href: "/projects",
     },
     {
+      label: "RL",
+      href: "/rl",
+    },
+    {
       label: "Education",
       href: "/education",
     },
@@ -28,10 +32,10 @@ export const siteConfig = {
       label: "Contact",
       href: "/contact",
     },
-    {
-      label: "Resume",
-      href: "/resume",
-    },
+    // {
+    //   label: "Resume",
+    //   href: "/resume",
+    // },
   ],
   navMenuItems: [
     {
@@ -47,6 +51,10 @@ export const siteConfig = {
       href: "/projects",
     },
     {
+      label: "RL",
+      href: "/rl",
+    },
+    {
       label: "Education",
       href: "/education",
     },
@@ -58,10 +66,10 @@ export const siteConfig = {
       label: "Contact",
       href: "/contact",
     },
-    {
-      label: "Resume",
-      href: "/resume",
-    },
+    // {
+    //   label: "Resume",
+    //   href: "/resume",
+    // },
   ],
   links: {
     github: "https://github.com/mn-cs",

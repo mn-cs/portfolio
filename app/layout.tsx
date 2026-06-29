@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
-import { Divider } from "@nextui-org/divider";
-import { Link } from "@nextui-org/link";
+import { Divider } from "@heroui/divider";
+import { Link } from "@heroui/link";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import clsx from "clsx";
@@ -82,7 +82,7 @@ export default function RootLayout({
           sizes="96x96"
           type="image/png"
         />
-        <link rel="canonical" href="https://www.michaelhayk.com/" />
+        <link rel="canonical" href="https://michaelhayk.com/" />
       </head>
       <body
         className={clsx(

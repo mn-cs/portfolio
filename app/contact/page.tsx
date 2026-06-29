@@ -1,9 +1,9 @@
 "use client";
-import { Card } from "@nextui-org/card";
-import { Divider } from "@nextui-org/divider";
+import { Card } from "@heroui/card";
+import { Divider } from "@heroui/divider";
 import Image from "next/image";
 
-export default function PricingPage() {
+export default function ContactPage() {
   return (
     <div className="flex flex-col items-center">
       <Card className="flex items-center mb-5 h-[215px] w-full">
@@ -20,7 +20,7 @@ export default function PricingPage() {
         <p className="pt-0.5 pl-10  text-default-500">Data Scientist</p>
       </Card>
       <Card className="p-0 overflow-hidden  h-[215px] cursor-pointer text-left w-full">
-        <a href="mailto:	Email Address">
+        <a href="mailto:Email Address">
           <p className="pt-5 pl-6 pb-1 text-default-500 ">
             Email Address
           </p>
