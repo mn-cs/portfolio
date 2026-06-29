@@ -1,7 +1,7 @@
 "use client";
 
-import { Card, CardHeader, CardFooter } from "@nextui-org/card";
-import { Image } from "@nextui-org/image";
+import { Card, CardHeader, CardFooter } from "@heroui/card";
+import { Image } from "@heroui/image";
 
 import { ExternalLinkIcon, JupyterIcon } from "@/components/icons";
 import projects from "@/config/projectData";

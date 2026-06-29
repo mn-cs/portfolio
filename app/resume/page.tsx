@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import { Card, CardHeader, CardBody } from "@heroui/card";
 import { Button } from "@heroui/button";
 import React from "react";
 

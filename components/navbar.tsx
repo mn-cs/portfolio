@@ -2,18 +2,18 @@
 
 import { useState } from "react";
 import {
-  Navbar as NextUINavbar,
+  Navbar as HeroUINavbar,
   NavbarContent,
   NavbarMenu,
   NavbarMenuToggle,
   NavbarBrand,
   NavbarItem,
   NavbarMenuItem,
-} from "@nextui-org/navbar";
-import { link as linkStyles } from "@nextui-org/theme";
+} from "@heroui/navbar";
+import { link as linkStyles } from "@heroui/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
-import { Link } from "@nextui-org/link";
+import { Link } from "@heroui/link";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -27,7 +27,7 @@ export const Navbar = () => {
   };
 
   return (
-    <NextUINavbar
+    <HeroUINavbar
       isBordered
       isMenuOpen={isMenuOpen}
       maxWidth="xl"
@@ -97,6 +97,6 @@ export const Navbar = () => {
           ))}
         </div>
       </NavbarMenu>
-    </NextUINavbar>
+    </HeroUINavbar>
   );
 };
