@@ -34,6 +34,25 @@ export const Navbar = () => {
       onMenuOpenChange={setIsMenuOpen}
       position="sticky"
     >
+      <style>{`
+        .rl-nav-link {
+          background: linear-gradient(90deg, #1D9E75 0%, #378ADD 50%, #D4537E 100%);
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+          font-weight: 600;
+          animation: rl-title-shimmer 8s ease-in-out infinite;
+        }
+        @keyframes rl-title-shimmer {
+          0%, 100% { background-position: 0% center; }
+          50% { background-position: 100% center; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .rl-nav-link { animation: none; }
+        }
+      `}</style>
       <NavbarContent className="basis-1/5 sm:basis-full justify-start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <Link
@@ -58,6 +77,7 @@ export const Navbar = () => {
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  item.label === "RL" && "rl-nav-link",
                 )}
                 color="foreground"
                 href={item.href}
@@ -87,6 +107,7 @@ export const Navbar = () => {
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  item.label === "RL" && "rl-nav-link",
                 )}
                 href={item.href}
                 onClick={handleMenuClose}

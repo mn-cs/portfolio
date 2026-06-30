@@ -260,6 +260,15 @@ export default function QLearningDashboard() {
       <div className="rl-dashboard">
         <DashboardTitle />
 
+        <p className="rl-intro">
+          A reinforcement-learning agent learns to navigate a 6×6 grid to the
+          goal (+10) while avoiding traps (−10), starting from zero knowledge.
+          Hit <strong>Play</strong> and watch the arrows — the agent&apos;s
+          best-known move in each cell — sharpen as it learns. Tune the
+          hyperparameters below to see how they change learning speed and
+          stability.
+        </p>
+
         <div className="rl-stats">
           <Stat label="Episode" value={s.episode} />
           <Stat label="Steps" value={s.steps} />
@@ -406,6 +415,20 @@ export default function QLearningDashboard() {
             <button onClick={handleStep}>Step</button>
             <button onClick={handleReset}>Reset</button>
           </div>
+        </div>
+
+        <div className="rl-card">
+          <h3 className="rl-card-title">How it works</h3>
+          <p className="rl-explainer">
+            This uses <strong>Q-learning</strong>, a classic algorithm that
+            learns the value of taking each action in each cell. The agent
+            balances <em>exploration</em> (random moves, set by ε) against{" "}
+            <em>exploitation</em> (its current best guess). After every move it
+            updates its estimate using the reward it got plus the discounted
+            value of where it landed (γ), nudged by the learning rate (α). Over
+            many episodes those estimates converge into a policy — the arrows you
+            see — that reliably reaches the goal.
+          </p>
         </div>
       </div>
     </>
@@ -697,6 +720,23 @@ const styles = `
   box-sizing: border-box;
 }
 .rl-dashboard *, .rl-dashboard *::before, .rl-dashboard *::after { box-sizing: border-box; }
+
+.rl-intro {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--rl-text-muted);
+  margin: 0 0 1.25rem;
+}
+.rl-intro strong { color: var(--rl-text); font-weight: 600; }
+
+.rl-explainer {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--rl-text-muted);
+  margin: 0;
+}
+.rl-explainer strong { color: var(--rl-text); font-weight: 600; }
+.rl-explainer em { font-style: normal; color: var(--rl-accent); font-weight: 500; }
 
 .rl-stats { display: flex; gap: 10px; margin-bottom: 0.875rem; flex-wrap: wrap; }
 .rl-stat {
