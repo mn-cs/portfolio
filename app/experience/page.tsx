@@ -14,7 +14,7 @@ export default function Experience() {
         <CardBody>
           <div className="flex flex-col">
             <p className="text-md">UC San Diego</p>
-            <p className="text-small text-default-500">Sep 2024 - Present</p>
+            <p className="text-small text-default-500">Present</p>
           </div>
         </CardBody>
         <Divider />
