@@ -31,11 +31,6 @@ export default function ResumePage() {
             </div>
           </div>
 
-          {/* Optional fallback note */}
-          {/* <div className="mt-3 text-xs text-foreground-500">
-            If your browser blocks embedded PDFs, use “Open in new tab” or
-            “Download”.
-          </div> */}
         </CardBody>
 
         <CardHeader className="flex items-center justify-between gap-3">

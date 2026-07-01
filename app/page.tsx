@@ -10,7 +10,6 @@ export default function Home() {
       <div className="flex flex-col md:flex-row items-center  w-full">
         <div className="w-full">
           <Card
-            // isBlurred
             className="mt-3 "
           >
             <CardHeader>

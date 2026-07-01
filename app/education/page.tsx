@@ -24,7 +24,6 @@ export default function DocsPage() {
           </div>
           <p className="text-small text-default-500">
             September 2024 - June 2027
-            {/* September 2024 - June 2027 */}
           </p>
         </CardBody>
         <Divider />
@@ -47,7 +46,7 @@ export default function DocsPage() {
         </CardFooter>
       </Card>
 
-      {/* {/* ------------------ LACC -------------------*/}
+      {/* ------------------ LACC -------------------*/}
       <Card className="w-full  mx-auto mb-3">
         {/* College Name */}
         <CardHeader className="px-5 text-lg font-semibold">
@@ -70,12 +69,6 @@ export default function DocsPage() {
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
           <ul className="list-disc list-inside pl-1 text-small text-default-500 space-y-1">
-            {/* <li>CS 216 Object-Oriented Programming C++</li>
-            <li>CS 119 Python Programming</li>
-            <li>CS 116 Programming in C++</li>
-            <li>MATH 229 Statistics for Data Science</li>
-            <li>MATH 261 Calculus I</li>
-            <li>MATH 260 Precalculus</li> */}
             <li> Object-Oriented Programming C++</li>
             <li> Python Programming</li>
             <li> Programming in C++</li>
@@ -117,7 +110,6 @@ export default function DocsPage() {
         <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
-          {/* <p className="font-medium">Coursework</p> */}
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
             <li>Tools for Data Science</li>
             <li>What is Data Science?</li>
@@ -155,7 +147,6 @@ export default function DocsPage() {
         <Divider />
         {/* Coursework */}
         <CardBody className="px-5 space-y-1">
-          {/* <p className="font-medium">Coursework</p> */}
           <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
             <li>Frontend Web Coding Bootcamp</li>
             <li>Fundamentals of Software Development</li>

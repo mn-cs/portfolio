@@ -14,8 +14,6 @@ export default function DocsPage() {
         <CardBody className="px-5 text-default-500 text-medium">
           <ul className="list-disc list-inside space-y-1">
             <li>Python</li>
-            {/* <li>JavaScript</li>
-            <li>C++</li> */}
             <li>SQL</li>
           </ul>
         </CardBody>
@@ -29,10 +27,8 @@ export default function DocsPage() {
         <CardBody className="px-5 text-default-500 text-medium">
           <ul className="list-disc list-inside space-y-1">
             <li>NumPy</li>
-            {/* <li>SciPy</li> */}
             <li>Pandas</li>
             <li>Matplotlib</li>
-            {/* <li>Seaborn</li> */}
             <li>Scikit-learn</li>
           </ul>
         </CardBody>
@@ -60,7 +56,6 @@ export default function DocsPage() {
           <ul className="list-disc list-inside space-y-1">
             <li>PostgreSQL</li>
             <li>SQLite</li>
-            {/* <li>MongoDB</li> */}
           </ul>
         </CardBody>
       </Card>
