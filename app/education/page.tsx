@@ -94,64 +94,14 @@ export default function DocsPage() {
         </CardBody>
 
         <Divider />
-        {/* ------------------ UCLA -------------------*/}
         {/* Location */}
         <CardFooter className="px-5 text-small text-default-700">
           Los Angeles, California
         </CardFooter>
-      </Card>
-      <Card className="w-full  mx-auto mb-3">
-        {/* University Name */}
-        <CardHeader className="px-5 text-lg font-semibold">
-          University of California, Los Angeles
-        </CardHeader>
-        <Divider />
-        {/* Program */}
-        <CardBody className="px-5 space-y-1">
-          <p className="text-medium font-medium">
-            Computer Science Web Coding Boot Camp
-          </p>
-          <p className="text-small text-default-500">June 2019 - March 2020</p>
-        </CardBody>
-        <Divider />
-        {/* Coursework */}
-        <CardBody className="px-5 space-y-1">
-          {/* <p className="font-medium">Coursework</p> */}
-          <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
-            <li>Frontend Web Coding Bootcamp</li>
-            <li>Fundamentals of Software Development</li>
-          </ul>
-        </CardBody>
-        <Divider />
-        {/* Location */}
-        <CardFooter className="px-5 text-small text-default-700">
-          Los Angeles, California
-        </CardFooter>
-      </Card>
-
-      {/* ------------------ ASU -------------------*/}
-      <Card className="w-full mx-auto mb-3">
-        {/* University Name */}
-        <CardHeader className="px-5 text-lg font-semibold">
-          Armenian National University
-        </CardHeader>
-        <Divider />
-        {/* Degree & Dates */}
-        <CardBody className="px-5 space-y-1">
-          <p className="text-medium font-medium">
-            Bachelor of Engineering
-          </p>
-          <p className="text-small text-default-500">
-            September 2003 - June 2009
-          </p>
-        </CardBody>
-        <Divider />
-        {/* Location */}
-        <CardFooter className="px-5 text-small">Yerevan, Armenia</CardFooter>
       </Card>
 
       {/* ------------------ IBM -------------------*/}
-      <Card className="w-full  mx-auto">
+      <Card className="w-full  mx-auto mb-3">
         {/* University Name */}
         <CardHeader className="px-5 text-lg font-semibold">Coursera</CardHeader>
         <Divider />
@@ -186,6 +136,57 @@ export default function DocsPage() {
         <CardFooter className="px-5 text-small text-default-700">
           Los Angeles, California
         </CardFooter>
+      </Card>
+
+      {/* ------------------ UCLA -------------------*/}
+      <Card className="w-full  mx-auto mb-3">
+        {/* University Name */}
+        <CardHeader className="px-5 text-lg font-semibold">
+          University of California, Los Angeles
+        </CardHeader>
+        <Divider />
+        {/* Program */}
+        <CardBody className="px-5 space-y-1">
+          <p className="text-medium font-medium">
+            Computer Science Web Coding Boot Camp
+          </p>
+          <p className="text-small text-default-500">June 2019 - March 2020</p>
+        </CardBody>
+        <Divider />
+        {/* Coursework */}
+        <CardBody className="px-5 space-y-1">
+          {/* <p className="font-medium">Coursework</p> */}
+          <ul className="list-disc pl-4 text-small text-default-500 space-y-1">
+            <li>Frontend Web Coding Bootcamp</li>
+            <li>Fundamentals of Software Development</li>
+          </ul>
+        </CardBody>
+        <Divider />
+        {/* Location */}
+        <CardFooter className="px-5 text-small text-default-700">
+          Los Angeles, California
+        </CardFooter>
+      </Card>
+
+      {/* ------------------ ASU -------------------*/}
+      <Card className="w-full mx-auto">
+        {/* University Name */}
+        <CardHeader className="px-5 text-lg font-semibold">
+          Armenian National University
+        </CardHeader>
+        <Divider />
+        {/* Degree & Dates */}
+        <CardBody className="px-5 space-y-1">
+          <p className="text-medium font-medium">
+            Bachelor of Engineering
+          </p>
+          <p className="text-small text-default-500">
+            September 2003 - June 2009
+          </p>
+        </CardBody>
+        <Divider />
+        {/* Location */}
+        <CardFooter className="px-5 text-small">Yerevan, Armenia</CardFooter>
       </Card>
     </div>
   );
