@@ -70,7 +70,7 @@ export default function DocsPage() {
             <li>Jupyter Notebook / JupyterLab</li>
             <li>DB Browser for SQLite</li>
             <li>Google Colab</li>
-            <li>AWS (S3, EC2, SageMaker)</li>
+            <li>AWS (S3, EC2, SageMaker Unified Studio)</li>
             <li>Git</li>
             <li>GitHub</li>
             <li>VS Code</li>
